@@ -1,0 +1,5 @@
+# runtime data must never be published
+nila_data/
+*.log
+*.lock
+config.json

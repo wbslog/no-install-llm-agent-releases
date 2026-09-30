@@ -1,0 +1,34 @@
+{
+  "version": "1.1.0",
+  "date": "2026-09-30",
+  "notes": [
+    "자동 업데이트: 실행 시 새 릴리즈를 확인해 자동으로 받아 교체 후 같은 창에서 다시 실행 (없으면 그대로 실행)",
+    "설정 \u003e 버전 확인: 현재/최신 버전, 업데이트 확인·설치 버튼, 시작 시 자동 업데이트 설정",
+    "이미지 분석 도구(view_image): PC의 이미지 파일을 연결된 LLM으로 분석, 큰 이미지 자동 축소, BMP/WebP 지원",
+    "엑셀(.xlsx)·워드(.docx)·파워포인트(.pptx) 내장 읽기 — Python·Office 설치 불필요",
+    "응답 출력 중 다른 채팅으로 이동했다가 돌아와도 이어서 출력",
+    "nila 전용 아이콘으로 교체, 프로그램 설명에서 시스템 정보 제거"
+  ],
+  "assets": {
+    "darwin-amd64": {
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.1.0/nila-1.1.0-macos-x64.zip",
+      "sha256": "b84c23a7179d195cbb3f53cfbc6cd083dbfa368689527181dce54f05641be5d6",
+      "size": 3698176
+    },
+    "darwin-arm64": {
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.1.0/nila-1.1.0-macos-arm64.zip",
+      "sha256": "bcb0b11411b7f091916017003169e3696c24cccce1865e544cdb8ff1c4197a2e",
+      "size": 3426796
+    },
+    "windows-amd64": {
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.1.0/nila-windows-x64.exe",
+      "sha256": "9107157379019645f6333419679192e6585d6ba1925e3c676ac56b0b475e6728",
+      "size": 8688128
+    },
+    "windows-arm64": {
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.1.0/nila-windows-arm64.exe",
+      "sha256": "25f60ea821200958e356a9e0ecc46b7fcfcb3b48ea952e2a53ad461a73c09b90",
+      "size": 7934464
+    }
+  }
+}
