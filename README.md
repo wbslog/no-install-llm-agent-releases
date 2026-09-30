@@ -7,7 +7,7 @@
 **One file. Any LLM. Your whole PC.**
 **파일 하나로, 원하는 LLM으로, 내 PC의 실제 작업까지.**
 
-`v1.4.0` · 2026-09-30 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
+`v1.4.1` · 2026-09-30 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
 
 </div>
 
@@ -17,10 +17,10 @@
 
 | Platform · 플랫폼 | File · 파일 |
 |---|---|
-| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.0/nila-windows-x64.exe) |
-| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.0/nila-windows-arm64.exe) |
-| **macOS Apple Silicon (M1–M4)** | [nila-1.4.0-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.0/nila-1.4.0-macos-arm64.zip) |
-| macOS Intel | [nila-1.4.0-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.0/nila-1.4.0-macos-x64.zip) |
+| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.1/nila-windows-x64.exe) |
+| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.1/nila-windows-arm64.exe) |
+| **macOS Apple Silicon (M1–M4)** | [nila-1.4.1-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.1/nila-1.4.1-macos-arm64.zip) |
+| macOS Intel | [nila-1.4.1-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.1/nila-1.4.1-macos-x64.zip) |
 
 - **Windows** — Save the exe anywhere and double-click. If SmartScreen appears: *More info → Run anyway*.
   받은 exe를 원하는 폴더에 두고 실행하세요. SmartScreen 경고 시 **추가 정보 → 실행**.
@@ -106,6 +106,11 @@ Gemini 계정 로그인은 Node.js가 없으면 휴대용 Node.js를 자동으�
 ---
 
 ## Version history · 버전 기록
+
+### v1.4.1 (2026-09-30)
+
+- Gemini CLI 자동 설치가 성공했는데도 '설치 후 실행 파일을 찾지 못했습니다' 오류로 끝나던 문제 수정 (설치 완료 판정 오류)
+- CLI가 사용 가능하면 이전 설치 실패 메시지를 더 이상 표시하지 않음
 
 ### v1.4.0 (2026-09-30)
 
