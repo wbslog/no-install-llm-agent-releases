@@ -7,7 +7,7 @@
 **One file. Any LLM. Your whole PC.**
 **파일 하나로, 원하는 LLM으로, 내 PC의 실제 작업까지.**
 
-`v1.3.0` · 2026-09-30 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
+`v1.3.1` · 2026-09-30 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
 
 </div>
 
@@ -17,10 +17,10 @@
 
 | Platform · 플랫폼 | File · 파일 |
 |---|---|
-| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.0/nila-windows-x64.exe) |
-| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.0/nila-windows-arm64.exe) |
-| **macOS Apple Silicon (M1–M4)** | [nila-1.3.0-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.0/nila-1.3.0-macos-arm64.zip) |
-| macOS Intel | [nila-1.3.0-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.0/nila-1.3.0-macos-x64.zip) |
+| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.1/nila-windows-x64.exe) |
+| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.1/nila-windows-arm64.exe) |
+| **macOS Apple Silicon (M1–M4)** | [nila-1.3.1-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.1/nila-1.3.1-macos-arm64.zip) |
+| macOS Intel | [nila-1.3.1-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.1/nila-1.3.1-macos-x64.zip) |
 
 - **Windows** — Save the exe anywhere and double-click. If SmartScreen appears: *More info → Run anyway*.
   받은 exe를 원하는 폴더에 두고 실행하세요. SmartScreen 경고 시 **추가 정보 → 실행**.
@@ -107,6 +107,17 @@ Gemini 계정 로그인은 Node.js가 없으면 휴대용 Node.js를 자동으�
 
 ## Version history · 버전 기록
 
+### v1.3.1 (2026-09-30)
+
+- 설정 > 업데이트: 업데이트 설치 시 단계별 진행 화면(① 다운로드 % → ② 설치 → ③ 다시 시작) 표시, 완료되면 자동 새로고침
+- 페이지를 연 지 40초 뒤 설치를 누르면 진행 표시·자동 새로고침이 멈추던 문제 수정
+- '버전 확인' 표기를 '업데이트'로 통일
+- 좌측 메뉴 상단의 로고·타이틀·접기(<) 줄 제거 (메뉴 보기/감추기는 상단 토글 아이콘·Ctrl+B)
+- 사용자 지정 지침에 일반적인 기본 지침을 기본값으로 제공(비어 있을 때 1회 채움) + '기본 지침으로 되돌리기' 버튼
+- 설정의 ? 도움말 말풍선이 창 가장자리에서 잘리지 않도록 위치 자동 조정
+- 계정 로그인: CLI 설치가 끝나기 전에 로그인 버튼이 활성화되어 Gemini CLI가 파일 누락 오류로 실행되던 문제 수정(설치 완료 확인 후에만 사용 가능 표시)
+- 대기열 메시지 취소: 취소선으로 표시하고 실행 중지, 이후 삭제 아이콘으로 실제 삭제
+
 ### v1.3.0 (2026-09-30)
 
 - 계정 로그인: Claude·ChatGPT·Google 공식 로그인 페이지로 로그인해 API 키 없이 구독 계정으로 사용 (공식 CLI 자동 설치: Claude Code·Codex CLI·Gemini CLI, 휴대용 Node.js 포함) — 비밀번호는 nila가 보거나 저장하지 않음
@@ -122,7 +133,7 @@ Gemini 계정 로그인은 Node.js가 없으면 휴대용 Node.js를 자동으�
 - 질문에 날짜·시간과 복사 버튼, 답변 끝에 소모 토큰·소요 시간·완료 시간과 복사 버튼 표시
 - 소형 컨텍스트 모델(예: 32K 로컬 LLM) 대응: 도구 결과 크기를 컨텍스트 한도에 맞춰 자동 조절, 한도 초과 시 요약→결과 축소→출력 예약 축소 순으로 자동 재시도
 - 자체 LLM 설정에 '컨텍스트 크기' 항목 추가, '맥락' 표기를 '컨텍스트'로 통일
-- 설정 > 버전 확인에서 업데이트 설치 시 실행 중 작업 종료 후 자동 재시작, 재시작 후 '업데이트 완료' 안내
+- 설정 > 업데이트에서 업데이트 설치 시 실행 중 작업 종료 후 자동 재시작, 재시작 후 '업데이트 완료' 안내
 
 ### v1.2.0 (2026-09-30)
 
@@ -142,7 +153,7 @@ Gemini 계정 로그인은 Node.js가 없으면 휴대용 Node.js를 자동으�
 ### v1.1.0 (2026-09-30)
 
 - 자동 업데이트: 실행 시 새 릴리즈를 확인해 자동으로 받아 교체 후 같은 창에서 다시 실행 (없으면 그대로 실행)
-- 설정 > 버전 확인: 현재/최신 버전, 업데이트 확인·설치 버튼, 시작 시 자동 업데이트 설정
+- 설정 > 업데이트: 현재/최신 버전, 업데이트 확인·설치 버튼, 시작 시 자동 업데이트 설정
 - 이미지 분석 도구(view_image): PC의 이미지 파일을 연결된 LLM으로 분석, 큰 이미지 자동 축소, BMP/WebP 지원
 - 엑셀(.xlsx)·워드(.docx)·파워포인트(.pptx) 내장 읽기 — Python·Office 설치 불필요
 - 응답 출력 중 다른 채팅으로 이동했다가 돌아와도 이어서 출력
