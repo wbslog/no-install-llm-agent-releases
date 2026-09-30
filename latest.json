@@ -1,40 +1,33 @@
 {
-  "version": "1.2.0",
+  "version": "1.2.1",
   "date": "2026-09-30",
   "notes": [
-    "작업이 새로고침(F5)·채팅 이동·창 닫힘에도 서버에서 계속 진행되고, 다시 열면 이어서 표시",
-    "실행 중에도 메시지 전송 가능 — 대기열에 쌓여 순서대로 처리(취소 가능)",
-    "슬래시 명령어: /help /clear /model /folder /mode /memory /history /export /stop /settings /update /version",
-    "입력창 ↑/↓ 로 이전 입력 불러오기, Ctrl+B 좌측 메뉴 토글, 창 폭 100% 사용·좁은 창에서 메뉴 자동 숨김",
-    "LLM 연결 목록: 여러 연결을 등록하고 선택/전환(/model), 연결 방식 'API 키' 또는 '로그인(공식 CLI: Claude Code·Gemini CLI·Codex CLI)' 선택, 로그인 방식 주의사항 안내",
-    "기억: 마지막 대화 자동 복원, save_memory로 저장한 기억을 매 대화에 반영(/memory), search_history로 이전 대화 검색",
-    "웹 페이지 분석(fetch_url: 브라우저처럼 접속·본문/링크 추출)과 경제지 5곳 뉴스 검색·요약(search_news, Google News RSS, 최근 N일)",
-    "이미지 편집/합성 내장(image_edit·image_compose: 자르기·크기·회전·투명도·오버레이) — 외부 프로그램 불필요",
-    "임시 보조 파일 자동 정리 지침, 토큰 사용량 단위·합계 표시, 버전 확인 시 진행 표시",
-    "사고력 수준(보통/높음/울트라) 선택, 맥락(컨텍스트) 사용량 게이지, 한도 근접 시 자동 요약(맥락 정리)·/compact",
-    "크롤링: CSS 선택자로 특정 태그 추출(mode=select, 텍스트/HTML/속성), 표 추출(mode=tables), Google News 링크 원문 해석",
-    "설정창 확대(창 크기에 맞춰 축소), 채팅 기록 전체 삭제 버튼 위치·외곽선, 작성 중 스피너 회전 수정"
+    "승인 모드(수동/자동)·사고력(보통/높음/울트라)을 위로 열리는 드롭다운으로 변경(항목별 설명), 컨텍스트 게이지를 그 옆으로 이동",
+    "질문에 날짜·시간과 복사 버튼, 답변 끝에 소모 토큰·소요 시간·완료 시간과 복사 버튼 표시",
+    "소형 컨텍스트 모델(예: 32K 로컬 LLM) 대응: 도구 결과 크기를 컨텍스트 한도에 맞춰 자동 조절, 한도 초과 시 요약→결과 축소→출력 예약 축소 순으로 자동 재시도",
+    "자체 LLM 설정에 '컨텍스트 크기' 항목 추가, '맥락' 표기를 '컨텍스트'로 통일",
+    "설정 \u003e 버전 확인에서 업데이트 설치 시 실행 중 작업 종료 후 자동 재시작, 재시작 후 '업데이트 완료' 안내"
   ],
   "assets": {
     "darwin-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.0/nila-1.2.0-macos-x64.zip",
-      "sha256": "4a5d523198c34c3f73f9dd4869c15d16a7ddaeacf7407dc44faf41ac52433ec9",
-      "size": 4383268
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.1/nila-1.2.1-macos-x64.zip",
+      "sha256": "8be3dcddd10ba9f5317f747c1f9e3dde6c21e85ff7ba58b3bae00c83bc3f7d6a",
+      "size": 4390735
     },
     "darwin-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.0/nila-1.2.0-macos-arm64.zip",
-      "sha256": "fe088e84beb8590a671e2bf00fb91e86a24a3272f87a0dd7b153ab82054c2189",
-      "size": 4077534
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.1/nila-1.2.1-macos-arm64.zip",
+      "sha256": "88c8437e223cc643583fb1b178cdb4e1aa3904e662ec5ad20409723911c0665d",
+      "size": 4083550
     },
     "windows-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.0/nila-windows-x64.exe",
-      "sha256": "87dc37be82754d3a9e776ee707a632c56d4329b13b4b1924b0aa3513f1dfb048",
-      "size": 10262016
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.1/nila-windows-x64.exe",
+      "sha256": "cb08975a97606d40d3faa606774749e0bcbb41d8ec156fd18f550502777e9bd4",
+      "size": 10278400
     },
     "windows-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.0/nila-windows-arm64.exe",
-      "sha256": "3f45fb933e8c81048021b4b5b6ef6808c373f6874a5f869bef46cb51dabcf0d4",
-      "size": 9387008
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.1/nila-windows-arm64.exe",
+      "sha256": "d281e03867a502015cba31883d1f828f5efe52105d17c94d15909eb40ce91dac",
+      "size": 9402880
     }
   }
 }

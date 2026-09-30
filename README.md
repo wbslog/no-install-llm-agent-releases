@@ -2,20 +2,28 @@
 
 설치 없이 실행하는 로컬 AI 에이전트 **nila**의 빌드 배포 저장소입니다. (빌드 결과물만 올라갑니다)
 
-## 최신 버전: v1.2.0 (2026-09-30)
+## 최신 버전: v1.2.1 (2026-09-30)
 
 | 플랫폼 | 다운로드 |
 |---|---|
-| Windows x64 | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.0/nila-windows-x64.exe) |
-| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.0/nila-windows-arm64.exe) |
-| macOS Apple Silicon | [nila-1.2.0-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.0/nila-1.2.0-macos-arm64.zip) |
-| macOS Intel | [nila-1.2.0-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.0/nila-1.2.0-macos-x64.zip) |
+| Windows x64 | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.1/nila-windows-x64.exe) |
+| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.1/nila-windows-arm64.exe) |
+| macOS Apple Silicon | [nila-1.2.1-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.1/nila-1.2.1-macos-arm64.zip) |
+| macOS Intel | [nila-1.2.1-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.1/nila-1.2.1-macos-x64.zip) |
 
 - Windows: 받은 exe를 원하는 폴더에 두고 실행하세요(이름은 nila.exe 로 바꿔도 됩니다). SmartScreen 경고 시 **추가 정보 → 실행**
 - macOS: 압축을 풀고 nila.app 실행. 경고가 뜨면 터미널에서 `xattr -cr nila.app`
 - 설치 후에는 프로그램이 시작할 때 이 저장소의 `latest.json`을 확인해 **자동으로 업데이트**합니다 (설정 > 버전 확인).
 
 ## 버전 기록
+
+### v1.2.1 (2026-09-30)
+
+- 승인 모드(수동/자동)·사고력(보통/높음/울트라)을 위로 열리는 드롭다운으로 변경(항목별 설명), 컨텍스트 게이지를 그 옆으로 이동
+- 질문에 날짜·시간과 복사 버튼, 답변 끝에 소모 토큰·소요 시간·완료 시간과 복사 버튼 표시
+- 소형 컨텍스트 모델(예: 32K 로컬 LLM) 대응: 도구 결과 크기를 컨텍스트 한도에 맞춰 자동 조절, 한도 초과 시 요약→결과 축소→출력 예약 축소 순으로 자동 재시도
+- 자체 LLM 설정에 '컨텍스트 크기' 항목 추가, '맥락' 표기를 '컨텍스트'로 통일
+- 설정 > 버전 확인에서 업데이트 설치 시 실행 중 작업 종료 후 자동 재시작, 재시작 후 '업데이트 완료' 안내
 
 ### v1.2.0 (2026-09-30)
 
@@ -28,7 +36,7 @@
 - 웹 페이지 분석(fetch_url: 브라우저처럼 접속·본문/링크 추출)과 경제지 5곳 뉴스 검색·요약(search_news, Google News RSS, 최근 N일)
 - 이미지 편집/합성 내장(image_edit·image_compose: 자르기·크기·회전·투명도·오버레이) — 외부 프로그램 불필요
 - 임시 보조 파일 자동 정리 지침, 토큰 사용량 단위·합계 표시, 버전 확인 시 진행 표시
-- 사고력 수준(보통/높음/울트라) 선택, 맥락(컨텍스트) 사용량 게이지, 한도 근접 시 자동 요약(맥락 정리)·/compact
+- 사고력 수준(보통/높음/울트라) 선택, 컨텍스트 사용량 게이지, 한도 근접 시 자동 요약(컨텍스트 정리)·/compact
 - 크롤링: CSS 선택자로 특정 태그 추출(mode=select, 텍스트/HTML/속성), 표 추출(mode=tables), Google News 링크 원문 해석
 - 설정창 확대(창 크기에 맞춰 축소), 채팅 기록 전체 삭제 버튼 위치·외곽선, 작성 중 스피너 회전 수정
 
