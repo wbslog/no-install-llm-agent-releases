@@ -1,21 +1,120 @@
-# nila 릴리즈 — No Install LLM Agent
+<div align="center">
 
-설치 없이 실행하는 로컬 AI 에이전트 **nila**의 빌드 배포 저장소입니다. (빌드 결과물만 올라갑니다)
+# nila (니라)
 
-## 최신 버전: v1.2.1 (2026-09-30)
+### No Install LLM Agent — 설치 없이 실행하는 로컬 AI 에이전트
 
-| 플랫폼 | 다운로드 |
+**One file. Any LLM. Your whole PC.**
+**파일 하나로, 원하는 LLM으로, 내 PC의 실제 작업까지.**
+
+`v1.3.0` · 2026-09-30 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
+
+</div>
+
+---
+
+## ⬇ Download · 다운로드
+
+| Platform · 플랫폼 | File · 파일 |
 |---|---|
-| Windows x64 | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.1/nila-windows-x64.exe) |
-| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.1/nila-windows-arm64.exe) |
-| macOS Apple Silicon | [nila-1.2.1-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.1/nila-1.2.1-macos-arm64.zip) |
-| macOS Intel | [nila-1.2.1-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.1/nila-1.2.1-macos-x64.zip) |
+| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.0/nila-windows-x64.exe) |
+| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.0/nila-windows-arm64.exe) |
+| **macOS Apple Silicon (M1–M4)** | [nila-1.3.0-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.0/nila-1.3.0-macos-arm64.zip) |
+| macOS Intel | [nila-1.3.0-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.0/nila-1.3.0-macos-x64.zip) |
 
-- Windows: 받은 exe를 원하는 폴더에 두고 실행하세요(이름은 nila.exe 로 바꿔도 됩니다). SmartScreen 경고 시 **추가 정보 → 실행**
-- macOS: 압축을 풀고 nila.app 실행. 경고가 뜨면 터미널에서 `xattr -cr nila.app`
-- 설치 후에는 프로그램이 시작할 때 이 저장소의 `latest.json`을 확인해 **자동으로 업데이트**합니다 (설정 > 버전 확인).
+- **Windows** — Save the exe anywhere and double-click. If SmartScreen appears: *More info → Run anyway*.
+  받은 exe를 원하는 폴더에 두고 실행하세요. SmartScreen 경고 시 **추가 정보 → 실행**.
+- **macOS** — Unzip and open `nila.app`. If Gatekeeper blocks it: `xattr -cr nila.app` (or right-click → Open).
+  압축을 풀고 `nila.app` 실행. 차단되면 터미널에서 `xattr -cr nila.app` 또는 우클릭 → 열기.
+- **Auto update · 자동 업데이트** — Once installed, nila checks this repository on every start and updates itself.
+  한 번 실행한 뒤에는 시작할 때마다 이 저장소를 확인해 스스로 최신 버전으로 업데이트합니다.
 
-## 버전 기록
+---
+
+## English
+
+**nila** is a portable AI agent that runs from a single executable — no installer, no runtime, no admin rights.
+Connect the model you prefer and nila works directly on your computer: it reads and edits files, organizes folders,
+analyzes documents and images, browses the web, and runs commands — with you in control of every change.
+
+### Why nila
+- **Truly portable** — one ~10 MB file. Settings, chats, memory and backups live in a `nila_data` folder next to it. Copy the folder to a USB stick and your agent comes with you.
+- **Bring your own model** — Claude, ChatGPT, Gemini, or your own server (Ollama, LM Studio, vLLM, any OpenAI-compatible API). Register several connections and switch with `/model` in the middle of a conversation — the context carries over.
+- **Use your subscription, not an API key** — *Account login* opens the official Claude / ChatGPT / Google sign-in page. The vendor's official CLI receives the token; nila never sees your password.
+- **Real work on your PC** — list, read, write, patch, move, copy and delete files anywhere (relative to a work folder or by absolute path), run PowerShell / shell commands, open files in their default app.
+- **Built-in document & image tools** — read Excel / Word / PowerPoint, view and analyze images through your model, crop / resize / rotate / overlay images — without Python, Office or Photoshop.
+- **Web & news** — fetch any page like a real browser, extract exactly what you need with CSS selectors or table extraction, and search five major Korean business outlets through Google News RSS for any time window.
+- **Safe by design** — *Manual* approval mode shows a diff before any file change or command; *Auto* mode runs freely. Originals are backed up before edits and deletions; system folders are protected.
+- **Never loses the thread** — work keeps running through page reloads and chat switches, messages queue up while the agent is busy, long conversations are summarized automatically near the context limit, and long-term memory persists across sessions.
+
+### Highlights
+| | |
+|---|---|
+| 🧠 Thinking level | Normal / High / Ultra — mapped to each provider's reasoning effort |
+| 📊 Context gauge | Live context usage with automatic compaction (`/compact`) |
+| ⌨️ Slash commands | `/help` `/clear` `/model` `/folder` `/mode` `/memory` `/history` `/compact` `/think` `/export` `/stop` `/settings` `/update` `/version` |
+| 🧾 Answer footer | Tokens, elapsed time, finish time and one-click copy on every answer |
+| 🌗 Themes | Light / Dark, custom window title, font size |
+| 🔄 Updates | Signed-hash verified self-update from this repository |
+
+### Privacy & security
+- Local server bound to `127.0.0.1` only, with a fresh random token on every launch.
+- API keys stay in `nila_data/config.json` on your machine. Account-login tokens are kept by the official CLIs.
+- Web-chat scraping is deliberately **not** used: it violates the services' terms and puts accounts at risk.
+
+### Requirements
+Windows 10/11 or macOS 11+, and Microsoft Edge or Google Chrome (used as the app window; falls back to the default browser).
+Account login for Gemini downloads a portable Node.js automatically if none is installed.
+
+---
+
+## 한국어
+
+**nila(니라)** 는 실행 파일 하나로 동작하는 **무설치 AI 에이전트**입니다. 설치 프로그램도, 런타임도, 관리자 권한도 필요 없습니다.
+원하는 LLM을 연결하면 nila가 **내 PC에서 직접** 파일을 읽고 고치고, 폴더를 정리하고, 문서와 이미지를 분석하고, 웹을 조사하고,
+명령을 실행합니다. 모든 변경은 사용자가 통제합니다.
+
+### 이런 점이 다릅니다
+- **진짜 포터블** — 약 10MB 파일 하나. 설정·대화·기억·백업은 옆의 `nila_data` 폴더에 저장되어, 폴더째 USB로 옮기면 그대로 이어서 씁니다.
+- **원하는 LLM 연결** — Claude, ChatGPT, Gemini, 사내·자체 LLM(Ollama, LM Studio, vLLM 등 OpenAI 호환). 여러 연결을 등록해 두고 대화 도중 `/model`로 바꿔도 **맥락이 그대로 이어집니다**.
+- **API 키 없이 구독 계정으로** — [계정 로그인]을 누르면 Claude·ChatGPT·Google **공식 로그인 페이지**가 열립니다. 인증 토큰은 각사 공식 CLI가 받아 보관하며, **nila는 비밀번호를 보지도 저장하지도 않습니다.**
+- **PC에서 실제로 일하는 에이전트** — 작업 폴더 기준 또는 절대 경로로 PC 어디든 파일 조회·작성·부분 수정·이동·복사·삭제, PowerShell/셸 명령 실행, 기본 프로그램으로 열기.
+- **문서·이미지 도구 내장** — 엑셀·워드·파워포인트 읽기, 이미지 분석(연결한 모델로 전송), 자르기·크기·회전·투명도·여러 장 오버레이 합성까지 **Python·Office·포토샵 없이** 처리합니다.
+- **웹·뉴스 조사** — 실제 브라우저처럼 페이지를 가져와 본문·링크·CSS 선택자로 특정 태그·표만 추출. 매일경제·머니투데이·이데일리·파이낸셜뉴스·한국경제를 Google News RSS로 언론사별 검색해 "최근 N일" 기사를 요약·보고합니다.
+- **안전한 기본값** — **수동** 모드는 파일 변경·명령 실행 전 변경 내용(diff)을 보여주고 승인을 받습니다. **자동** 모드는 즉시 실행합니다. 수정·삭제 전 원본은 자동 백업되고, 시스템 폴더는 보호됩니다.
+- **맥락을 잃지 않음** — 새로고침·채팅 이동에도 작업은 계속되고, 작업 중 보낸 메시지는 대기열로 순서대로 처리됩니다. 컨텍스트 한도에 가까워지면 이전 내용을 자동 요약하고, 장기 기억은 세션을 넘어 유지됩니다.
+
+### 주요 기능
+| | |
+|---|---|
+| 🧠 사고력 수준 | 보통 / 높음 / 울트라 — 각 LLM의 추론 강도로 자동 변환 |
+| 📊 컨텍스트 게이지 | 실시간 사용량 표시, 한도 근접 시 자동 요약(`/compact`) |
+| ⌨️ 명령어 | `/help` `/clear` `/model` `/folder` `/mode` `/memory` `/history` `/compact` `/think` `/export` `/stop` `/settings` `/update` `/version` |
+| 🧾 답변 정보 | 답변마다 소모 토큰·소요 시간·완료 시간·복사 버튼 |
+| 🌗 테마 | NORMAL / DARK, 프로그램 타이틀·글자 크기 설정 |
+| 🔄 자동 업데이트 | 이 저장소에서 SHA-256 검증 후 스스로 업데이트 |
+
+### 개인정보 · 보안
+- 로컬 서버는 `127.0.0.1`에만 열리며, 실행할 때마다 새 보안 토큰을 발급합니다.
+- API 키는 내 PC의 `nila_data/config.json`에만 저장됩니다. 계정 로그인 토큰은 각사 공식 CLI가 보관합니다.
+- 웹 채팅 화면을 긁어오는 방식은 서비스 약관 위반·계정 정지 위험 때문에 **사용하지 않습니다**.
+
+### 실행 환경
+Windows 10/11 또는 macOS 11 이상, Microsoft Edge 또는 Google Chrome(앱 창으로 사용 — 없으면 기본 브라우저).
+Gemini 계정 로그인은 Node.js가 없으면 휴대용 Node.js를 자동으로 받아 사용합니다.
+
+---
+
+## Version history · 버전 기록
+
+### v1.3.0 (2026-09-30)
+
+- 계정 로그인: Claude·ChatGPT·Google 공식 로그인 페이지로 로그인해 API 키 없이 구독 계정으로 사용 (공식 CLI 자동 설치: Claude Code·Codex CLI·Gemini CLI, 휴대용 Node.js 포함) — 비밀번호는 nila가 보거나 저장하지 않음
+- 대화 도중 LLM 연결을 바꿔도(API↔계정 로그인 포함) 요약+최근 대화를 넘겨 맥락을 이어서 작업
+- 명령어 입력 후 Enter로 바로 실행되지 않던 문제 수정, /model 입력 시 등록된 연결 목록에서 선택
+- 설정 메뉴 순서 변경(일반·LLM 설정·에이전트·업데이트·버전 기록·도움말·프로그램 설명), 에이전트 설정 항목별 ? 도움말
+- 상단에 프로그램 위치 표시 + 클릭 시 폴더 열기, 알림 메시지를 화면 최상단 가운데에 표시
+- 릴리즈 저장소 README를 영문·한글 소개로 개편, 프로그램 한글 이름 '니라' 표기
 
 ### v1.2.1 (2026-09-30)
 
@@ -61,3 +160,11 @@
 - 채팅 기록 저장(1~30일 자동 정리), 검색·이름 변경·삭제·전체 삭제·Markdown 내보내기
 - 토큰 사용량 집계/초기화, 실행 중지, 도움말·버전 기록·프로그램 설명
 
+
+---
+
+<div align="center">
+
+nila (니라) — No Install LLM Agent · This repository hosts release builds only · 빌드 배포 전용 저장소
+
+</div>
