@@ -7,7 +7,7 @@
 **One file. Any LLM. Your whole PC.**
 **파일 하나로, 원하는 LLM으로, 내 PC의 실제 작업까지.**
 
-`v1.3.3` · 2026-09-30 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
+`v1.4.0` · 2026-09-30 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
 
 </div>
 
@@ -17,10 +17,10 @@
 
 | Platform · 플랫폼 | File · 파일 |
 |---|---|
-| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.3/nila-windows-x64.exe) |
-| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.3/nila-windows-arm64.exe) |
-| **macOS Apple Silicon (M1–M4)** | [nila-1.3.3-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.3/nila-1.3.3-macos-arm64.zip) |
-| macOS Intel | [nila-1.3.3-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.3/nila-1.3.3-macos-x64.zip) |
+| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.0/nila-windows-x64.exe) |
+| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.0/nila-windows-arm64.exe) |
+| **macOS Apple Silicon (M1–M4)** | [nila-1.4.0-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.0/nila-1.4.0-macos-arm64.zip) |
+| macOS Intel | [nila-1.4.0-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.0/nila-1.4.0-macos-x64.zip) |
 
 - **Windows** — Save the exe anywhere and double-click. If SmartScreen appears: *More info → Run anyway*.
   받은 exe를 원하는 폴더에 두고 실행하세요. SmartScreen 경고 시 **추가 정보 → 실행**.
@@ -106,6 +106,14 @@ Gemini 계정 로그인은 Node.js가 없으면 휴대용 Node.js를 자동으�
 ---
 
 ## Version history · 버전 기록
+
+### v1.4.0 (2026-09-30)
+
+- 로컬 뉴스 인덱스(RAG): 설정 > 뉴스에서 관심 주제·주요 뉴스를 주기적으로 수집해 PC에 저장하고, 질문할 때 관련 기사를 자동으로 찾아 함께 전달 — 로컬 모델도 최신 소식으로 답변 (search_news 결과도 자동 저장, search_news_index 도구, 검색 테스트, /news)
+- 되돌리기: 질문 말풍선의 [되돌리기] 또는 /rewind 로 그 질문 직전으로 대화와 nila가 바꾼 파일(쓰기·수정·삭제·이동·복사·이미지 저장)을 복원, 질문은 입력창에 다시 채움 ('대화만 되돌리기' 선택 가능)
+- 하위 에이전트(run_subagents): 서로 독립적인 조사 작업을 읽기 전용 하위 에이전트로 나눠 동시에 실행하고 보고서만 받아 종합 — 진행 상황을 작업 카드에 표시, 동시 실행 수는 설정 > 에이전트
+- 자체 LLM 사고 모드 제어: Qwen3 등에서 사고력 '보통' = 사고 끔(빠른 답변), '높음·울트라' = 사고 켬 (chat_template_kwargs 또는 /think·/no_think 방식 선택)
+- 자체 LLM이 답변 앞에 붙이는 <think>…</think>를 스트리밍 중에도 사고 과정으로 분리해 표시
 
 ### v1.3.3 (2026-09-30)
 

@@ -1,30 +1,33 @@
 {
-  "version": "1.3.3",
+  "version": "1.4.0",
   "date": "2026-09-30",
   "notes": [
-    "업데이트 설치가 실행 중인 작업을 기다리는 동안 '진행 중인 작업 N개가 끝나면 설치합니다'로 안내하고 [작업 중지하고 지금 설치] 버튼 제공 (계속 '설치 중'으로 보이던 문제)",
-    "업데이트 적용이 두 번 실행되지 않도록 보호"
+    "로컬 뉴스 인덱스(RAG): 설정 \u003e 뉴스에서 관심 주제·주요 뉴스를 주기적으로 수집해 PC에 저장하고, 질문할 때 관련 기사를 자동으로 찾아 함께 전달 — 로컬 모델도 최신 소식으로 답변 (search_news 결과도 자동 저장, search_news_index 도구, 검색 테스트, /news)",
+    "되돌리기: 질문 말풍선의 [되돌리기] 또는 /rewind 로 그 질문 직전으로 대화와 nila가 바꾼 파일(쓰기·수정·삭제·이동·복사·이미지 저장)을 복원, 질문은 입력창에 다시 채움 ('대화만 되돌리기' 선택 가능)",
+    "하위 에이전트(run_subagents): 서로 독립적인 조사 작업을 읽기 전용 하위 에이전트로 나눠 동시에 실행하고 보고서만 받아 종합 — 진행 상황을 작업 카드에 표시, 동시 실행 수는 설정 \u003e 에이전트",
+    "자체 LLM 사고 모드 제어: Qwen3 등에서 사고력 '보통' = 사고 끔(빠른 답변), '높음·울트라' = 사고 켬 (chat_template_kwargs 또는 /think·/no_think 방식 선택)",
+    "자체 LLM이 답변 앞에 붙이는 \u003cthink\u003e…\u003c/think\u003e를 스트리밍 중에도 사고 과정으로 분리해 표시"
   ],
   "assets": {
     "darwin-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.3/nila-1.3.3-macos-x64.zip",
-      "sha256": "54f56fcbfd1eaaceb9a714a205dc790f7caf0ca602847438bc9d9daef7c45e06",
-      "size": 4459364
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.0/nila-1.4.0-macos-x64.zip",
+      "sha256": "27f949928707404947a59d869c850de148c762232ee29c56be00039abfd056f9",
+      "size": 4527878
     },
     "darwin-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.3/nila-1.3.3-macos-arm64.zip",
-      "sha256": "55e25572086a538a7984e026e6d511bfaec836b550686d80689e86167c6f97ab",
-      "size": 4148283
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.0/nila-1.4.0-macos-arm64.zip",
+      "sha256": "7d959c6278bd2a718ee5d1d00cbe732e4c270a37b85bb2b693c14e1776e9c44d",
+      "size": 4213886
     },
     "windows-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.3/nila-windows-x64.exe",
-      "sha256": "b91dd69a4e371e45d45c5ab8e8f45e3a1c186ebc574929d6e56e842c536c11cb",
-      "size": 10432000
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.0/nila-windows-x64.exe",
+      "sha256": "5e7eccd0346a6a89e276a61110259873539bc8d72e9f31f8723b3e03c4c116c9",
+      "size": 10596864
     },
     "windows-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.3/nila-windows-arm64.exe",
-      "sha256": "fadeb1601b642351134949fc01a43359de43e6992425672442ede500aa2eac14",
-      "size": 9544192
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.0/nila-windows-arm64.exe",
+      "sha256": "5b4a2eae36e473d2a689d33ca93b330e2c7702cd0fb22be5c949932164e447c6",
+      "size": 9694208
     }
   }
 }
