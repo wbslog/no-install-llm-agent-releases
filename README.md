@@ -2,20 +2,35 @@
 
 설치 없이 실행하는 로컬 AI 에이전트 **nila**의 빌드 배포 저장소입니다. (빌드 결과물만 올라갑니다)
 
-## 최신 버전: v1.1.0 (2026-09-30)
+## 최신 버전: v1.2.0 (2026-09-30)
 
 | 플랫폼 | 다운로드 |
 |---|---|
-| Windows x64 | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.1.0/nila-windows-x64.exe) |
-| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.1.0/nila-windows-arm64.exe) |
-| macOS Apple Silicon | [nila-1.1.0-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.1.0/nila-1.1.0-macos-arm64.zip) |
-| macOS Intel | [nila-1.1.0-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.1.0/nila-1.1.0-macos-x64.zip) |
+| Windows x64 | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.0/nila-windows-x64.exe) |
+| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.0/nila-windows-arm64.exe) |
+| macOS Apple Silicon | [nila-1.2.0-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.0/nila-1.2.0-macos-arm64.zip) |
+| macOS Intel | [nila-1.2.0-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.2.0/nila-1.2.0-macos-x64.zip) |
 
 - Windows: 받은 exe를 원하는 폴더에 두고 실행하세요(이름은 nila.exe 로 바꿔도 됩니다). SmartScreen 경고 시 **추가 정보 → 실행**
 - macOS: 압축을 풀고 nila.app 실행. 경고가 뜨면 터미널에서 `xattr -cr nila.app`
 - 설치 후에는 프로그램이 시작할 때 이 저장소의 `latest.json`을 확인해 **자동으로 업데이트**합니다 (설정 > 버전 확인).
 
 ## 버전 기록
+
+### v1.2.0 (2026-09-30)
+
+- 작업이 새로고침(F5)·채팅 이동·창 닫힘에도 서버에서 계속 진행되고, 다시 열면 이어서 표시
+- 실행 중에도 메시지 전송 가능 — 대기열에 쌓여 순서대로 처리(취소 가능)
+- 슬래시 명령어: /help /clear /model /folder /mode /memory /history /export /stop /settings /update /version
+- 입력창 ↑/↓ 로 이전 입력 불러오기, Ctrl+B 좌측 메뉴 토글, 창 폭 100% 사용·좁은 창에서 메뉴 자동 숨김
+- LLM 연결 목록: 여러 연결을 등록하고 선택/전환(/model), 연결 방식 'API 키' 또는 '로그인(공식 CLI: Claude Code·Gemini CLI·Codex CLI)' 선택, 로그인 방식 주의사항 안내
+- 기억: 마지막 대화 자동 복원, save_memory로 저장한 기억을 매 대화에 반영(/memory), search_history로 이전 대화 검색
+- 웹 페이지 분석(fetch_url: 브라우저처럼 접속·본문/링크 추출)과 경제지 5곳 뉴스 검색·요약(search_news, Google News RSS, 최근 N일)
+- 이미지 편집/합성 내장(image_edit·image_compose: 자르기·크기·회전·투명도·오버레이) — 외부 프로그램 불필요
+- 임시 보조 파일 자동 정리 지침, 토큰 사용량 단위·합계 표시, 버전 확인 시 진행 표시
+- 사고력 수준(보통/높음/울트라) 선택, 맥락(컨텍스트) 사용량 게이지, 한도 근접 시 자동 요약(맥락 정리)·/compact
+- 크롤링: CSS 선택자로 특정 태그 추출(mode=select, 텍스트/HTML/속성), 표 추출(mode=tables), Google News 링크 원문 해석
+- 설정창 확대(창 크기에 맞춰 축소), 채팅 기록 전체 삭제 버튼 위치·외곽선, 작성 중 스피너 회전 수정
 
 ### v1.1.0 (2026-09-30)
 
