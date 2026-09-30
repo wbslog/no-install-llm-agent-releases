@@ -1,30 +1,30 @@
 {
-  "version": "1.3.2",
+  "version": "1.3.3",
   "date": "2026-09-30",
   "notes": [
-    "답변 작성 중 소요 시간·토큰 수 실시간 표시(1초마다 갱신, 파일 내용 등 도구 입력 생성량 포함, '작성 중 (약 N자)' 진행 표시)",
-    "작성 중 상태 줄에 '파일 쓰기 작성 중… (약 N자)'처럼 도구 입력 생성량 표시 — 큰 파일을 만들 때 멈춘 것처럼 보이던 문제 개선"
+    "업데이트 설치가 실행 중인 작업을 기다리는 동안 '진행 중인 작업 N개가 끝나면 설치합니다'로 안내하고 [작업 중지하고 지금 설치] 버튼 제공 (계속 '설치 중'으로 보이던 문제)",
+    "업데이트 적용이 두 번 실행되지 않도록 보호"
   ],
   "assets": {
     "darwin-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.2/nila-1.3.2-macos-x64.zip",
-      "sha256": "6449aa0937db908f531a62f9934c7de8d8eae188d4464d2c3674461910c5fea8",
-      "size": 4457888
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.3/nila-1.3.3-macos-x64.zip",
+      "sha256": "54f56fcbfd1eaaceb9a714a205dc790f7caf0ca602847438bc9d9daef7c45e06",
+      "size": 4459364
     },
     "darwin-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.2/nila-1.3.2-macos-arm64.zip",
-      "sha256": "2dd99c3cc31846a59e587025029395d1e20aaf338db2ade1c6eb1dfcd5c43dcd",
-      "size": 4146977
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.3/nila-1.3.3-macos-arm64.zip",
+      "sha256": "55e25572086a538a7984e026e6d511bfaec836b550686d80689e86167c6f97ab",
+      "size": 4148283
     },
     "windows-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.2/nila-windows-x64.exe",
-      "sha256": "13c721771797379ed7f3e4573319929597b1a6a5c5c4c6432c8c99ac5e825ca5",
-      "size": 10428416
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.3/nila-windows-x64.exe",
+      "sha256": "b91dd69a4e371e45d45c5ab8e8f45e3a1c186ebc574929d6e56e842c536c11cb",
+      "size": 10432000
     },
     "windows-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.2/nila-windows-arm64.exe",
-      "sha256": "96051f72e7841786c116a0757ecca5823eb7dfeac05e39e1b3e61bf911f2fb0d",
-      "size": 9540096
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.3.3/nila-windows-arm64.exe",
+      "sha256": "fadeb1601b642351134949fc01a43359de43e6992425672442ede500aa2eac14",
+      "size": 9544192
     }
   }
 }
