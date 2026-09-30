@@ -7,7 +7,7 @@
 **One file. Any LLM. Your whole PC.**
 **파일 하나로, 원하는 LLM으로, 내 PC의 실제 작업까지.**
 
-`v1.4.1` · 2026-09-30 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
+`v1.4.2` · 2026-10-01 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
 
 </div>
 
@@ -17,10 +17,10 @@
 
 | Platform · 플랫폼 | File · 파일 |
 |---|---|
-| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.1/nila-windows-x64.exe) |
-| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.1/nila-windows-arm64.exe) |
-| **macOS Apple Silicon (M1–M4)** | [nila-1.4.1-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.1/nila-1.4.1-macos-arm64.zip) |
-| macOS Intel | [nila-1.4.1-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.1/nila-1.4.1-macos-x64.zip) |
+| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.2/nila-windows-x64.exe) |
+| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.2/nila-windows-arm64.exe) |
+| **macOS Apple Silicon (M1–M4)** | [nila-1.4.2-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.2/nila-1.4.2-macos-arm64.zip) |
+| macOS Intel | [nila-1.4.2-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.2/nila-1.4.2-macos-x64.zip) |
 
 - **Windows** — Save the exe anywhere and double-click. If SmartScreen appears: *More info → Run anyway*.
   받은 exe를 원하는 폴더에 두고 실행하세요. SmartScreen 경고 시 **추가 정보 → 실행**.
@@ -106,6 +106,12 @@ Gemini 계정 로그인은 Node.js가 없으면 휴대용 Node.js를 자동으�
 ---
 
 ## Version history · 버전 기록
+
+### v1.4.2 (2026-10-01)
+
+- Gemini CLI가 개인 Google 계정 사용 중단(IneligibleTierError)으로 실패하면, 재설치·재로그인 안내 대신 [API 키] 방식 전환(aistudio.google.com/apikey) 또는 Workspace 계정 로그인을 먼저 안내
+- Google Cloud 프로젝트 지정이 필요한 계정(GOOGLE_CLOUD_PROJECT)도 원인과 해결 방법을 안내
+- CLI 오류는 설명을 먼저 보여주고 긴 CLI 원문은 뒤에 표시
 
 ### v1.4.1 (2026-09-30)
 
