@@ -7,7 +7,7 @@
 **One file. Any LLM. Your whole PC.**
 **파일 하나로, 원하는 LLM으로, 내 PC의 실제 작업까지.**
 
-`v1.5.0` · 2026-10-01 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
+`v1.5.1` · 2026-10-01 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
 
 </div>
 
@@ -17,10 +17,10 @@
 
 | Platform · 플랫폼 | File · 파일 |
 |---|---|
-| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.5.0/nila-windows-x64.exe) |
-| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.5.0/nila-windows-arm64.exe) |
-| **macOS Apple Silicon (M1–M4)** | [nila-1.5.0-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.5.0/nila-1.5.0-macos-arm64.zip) |
-| macOS Intel | [nila-1.5.0-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.5.0/nila-1.5.0-macos-x64.zip) |
+| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.5.1/nila-windows-x64.exe) |
+| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.5.1/nila-windows-arm64.exe) |
+| **macOS Apple Silicon (M1–M4)** | [nila-1.5.1-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.5.1/nila-1.5.1-macos-arm64.zip) |
+| macOS Intel | [nila-1.5.1-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.5.1/nila-1.5.1-macos-x64.zip) |
 
 - **Windows** — Save the exe anywhere and double-click. If SmartScreen appears: *More info → Run anyway*.
   받은 exe를 원하는 폴더에 두고 실행하세요. SmartScreen 경고 시 **추가 정보 → 실행**.
@@ -106,6 +106,13 @@ Gemini 계정 로그인은 Node.js가 없으면 휴대용 Node.js를 자동으�
 ---
 
 ## Version history · 버전 기록
+
+### v1.5.1 (2026-10-01)
+
+- LLM 연결 방식을 서비스별 지원 여부에 맞게 자동 제한: Gemini는 API 키만 선택 가능 (Google이 2026-06-18부터 개인 계정의 Gemini CLI 사용을 중단), 계정 로그인 버튼은 비활성화하고 이유 표시
+- 기존 Gemini 계정 로그인 연결은 자동으로 API 키 방식으로 전환 — API 키를 입력하면 바로 사용
+- Claude Code·ChatGPT 계정 로그인 선택 시 요금 안내 표시 (Claude: 도구에서 쓰면 별도 월 크레딧 차감, ChatGPT: 요금제 사용량·5시간 단위 한도)
+- 채팅창 위 '이전 대화' 목록을 한 줄로 줄여 대화 영역을 더 넓게 표시 (높이 약 1/3)
 
 ### v1.5.0 (2026-10-01)
 
