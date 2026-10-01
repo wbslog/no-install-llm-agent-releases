@@ -7,7 +7,7 @@
 **One file. Any LLM. Your whole PC.**
 **파일 하나로, 원하는 LLM으로, 내 PC의 실제 작업까지.**
 
-`v1.4.2` · 2026-10-01 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
+`v1.5.0` · 2026-10-01 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
 
 </div>
 
@@ -17,10 +17,10 @@
 
 | Platform · 플랫폼 | File · 파일 |
 |---|---|
-| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.2/nila-windows-x64.exe) |
-| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.2/nila-windows-arm64.exe) |
-| **macOS Apple Silicon (M1–M4)** | [nila-1.4.2-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.2/nila-1.4.2-macos-arm64.zip) |
-| macOS Intel | [nila-1.4.2-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.2/nila-1.4.2-macos-x64.zip) |
+| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.5.0/nila-windows-x64.exe) |
+| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.5.0/nila-windows-arm64.exe) |
+| **macOS Apple Silicon (M1–M4)** | [nila-1.5.0-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.5.0/nila-1.5.0-macos-arm64.zip) |
+| macOS Intel | [nila-1.5.0-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.5.0/nila-1.5.0-macos-x64.zip) |
 
 - **Windows** — Save the exe anywhere and double-click. If SmartScreen appears: *More info → Run anyway*.
   받은 exe를 원하는 폴더에 두고 실행하세요. SmartScreen 경고 시 **추가 정보 → 실행**.
@@ -106,6 +106,14 @@ Gemini 계정 로그인은 Node.js가 없으면 휴대용 Node.js를 자동으�
 ---
 
 ## Version history · 버전 기록
+
+### v1.5.0 (2026-10-01)
+
+- 작업 폴더 이어서 작업: 새 대화에서 작업 폴더를 지정하면 그 폴더에서 마지막으로 작업한 대화가 자동으로 열려 대화 전체를 그대로 이어서 작업 (PC 재시작 후에도 동일, 설정 > 에이전트에서 끌 수 있음)
+- 채팅창 위에 이 폴더의 이전 대화 목록(제목·시간·메시지 수·마지막 요청) 표시 — 누르면 열기, [더 보기]로 전체 목록, 접기 가능 (표시 수 설정, 기본 3개)
+- 프로그램 종료·PC 재시작으로 끝나지 않은 작업은 '중단됨'으로 표시하고 [이어서 진행]으로 중단된 지점부터 계속
+- 폴더별 마지막 작업 상태(최근 요청·변경한 파일·마지막 답변)를 매 작업마다 자동 기록해, 그 폴더에서 새 대화를 시작해도 nila가 이전 작업 맥락을 알고 시작 (LLM에 알려줄 이전 대화 수 설정, 기본 10개)
+- 채팅 목록을 캐시해 대화가 많아도 목록·검색이 빠르게 열림
 
 ### v1.4.2 (2026-10-01)
 

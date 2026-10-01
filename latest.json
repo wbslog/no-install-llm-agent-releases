@@ -1,31 +1,33 @@
 {
-  "version": "1.4.2",
+  "version": "1.5.0",
   "date": "2026-10-01",
   "notes": [
-    "Gemini CLI가 개인 Google 계정 사용 중단(IneligibleTierError)으로 실패하면, 재설치·재로그인 안내 대신 [API 키] 방식 전환(aistudio.google.com/apikey) 또는 Workspace 계정 로그인을 먼저 안내",
-    "Google Cloud 프로젝트 지정이 필요한 계정(GOOGLE_CLOUD_PROJECT)도 원인과 해결 방법을 안내",
-    "CLI 오류는 설명을 먼저 보여주고 긴 CLI 원문은 뒤에 표시"
+    "작업 폴더 이어서 작업: 새 대화에서 작업 폴더를 지정하면 그 폴더에서 마지막으로 작업한 대화가 자동으로 열려 대화 전체를 그대로 이어서 작업 (PC 재시작 후에도 동일, 설정 \u003e 에이전트에서 끌 수 있음)",
+    "채팅창 위에 이 폴더의 이전 대화 목록(제목·시간·메시지 수·마지막 요청) 표시 — 누르면 열기, [더 보기]로 전체 목록, 접기 가능 (표시 수 설정, 기본 3개)",
+    "프로그램 종료·PC 재시작으로 끝나지 않은 작업은 '중단됨'으로 표시하고 [이어서 진행]으로 중단된 지점부터 계속",
+    "폴더별 마지막 작업 상태(최근 요청·변경한 파일·마지막 답변)를 매 작업마다 자동 기록해, 그 폴더에서 새 대화를 시작해도 nila가 이전 작업 맥락을 알고 시작 (LLM에 알려줄 이전 대화 수 설정, 기본 10개)",
+    "채팅 목록을 캐시해 대화가 많아도 목록·검색이 빠르게 열림"
   ],
   "assets": {
     "darwin-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.2/nila-1.4.2-macos-x64.zip",
-      "sha256": "5043e83d43c9671ff6160f8eca59aaca7c9567ef810281c2ab724249aa4a57a1",
-      "size": 4529641
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.5.0/nila-1.5.0-macos-x64.zip",
+      "sha256": "24606e29c2e2afc746357d1fdce389778d98eff2515bd8a630fb01f80366a04e",
+      "size": 4544564
     },
     "darwin-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.2/nila-1.4.2-macos-arm64.zip",
-      "sha256": "d1de382bb3410bc002fe0c7e2f7460dd136dd82556962719662f0f71651feb0a",
-      "size": 4215490
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.5.0/nila-1.5.0-macos-arm64.zip",
+      "sha256": "9e65eaa1769565fd9cb8276ec33922038d500edd1eca44aa65b2c3c9a8aafad3",
+      "size": 4228873
     },
     "windows-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.2/nila-windows-x64.exe",
-      "sha256": "af7f013a5ceed41fe296b99e1218c1f0a1247900ad146db70d6b0cbada019a74",
-      "size": 10600960
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.5.0/nila-windows-x64.exe",
+      "sha256": "c1cafab47f9a46cdc7a26a10c2c5517662fcd85fe6194339abc18d0081ed7257",
+      "size": 10638848
     },
     "windows-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.4.2/nila-windows-arm64.exe",
-      "sha256": "139651724475ffc60ed64f74f598d7e7c158c1e459ba9c1f49d55900202cb071",
-      "size": 9697792
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.5.0/nila-windows-arm64.exe",
+      "sha256": "9e8ce8a2331cbe73ce6c57241ab025e2822980b4dc6f16004b134ce1cde6ad52",
+      "size": 9733120
     }
   }
 }
