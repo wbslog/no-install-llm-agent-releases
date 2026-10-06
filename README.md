@@ -7,7 +7,7 @@
 **One file. Any LLM. Your whole PC.**
 **파일 하나로, 원하는 LLM으로, 내 PC의 실제 작업까지.**
 
-`v1.5.3` · 2026-10-02 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
+`v1.6.0` · 2026-10-06 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
 
 </div>
 
@@ -17,10 +17,10 @@
 
 | Platform · 플랫폼 | File · 파일 |
 |---|---|
-| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.5.3/nila-windows-x64.exe) |
-| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.5.3/nila-windows-arm64.exe) |
-| **macOS Apple Silicon (M1–M4)** | [nila-1.5.3-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.5.3/nila-1.5.3-macos-arm64.zip) |
-| macOS Intel | [nila-1.5.3-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.5.3/nila-1.5.3-macos-x64.zip) |
+| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.6.0/nila-windows-x64.exe) |
+| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.6.0/nila-windows-arm64.exe) |
+| **macOS Apple Silicon (M1–M4)** | [nila-1.6.0-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.6.0/nila-1.6.0-macos-arm64.zip) |
+| macOS Intel | [nila-1.6.0-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.6.0/nila-1.6.0-macos-x64.zip) |
 
 - **Windows** — Save the exe anywhere and double-click. If SmartScreen appears: *More info → Run anyway*.
   받은 exe를 원하는 폴더에 두고 실행하세요. SmartScreen 경고 시 **추가 정보 → 실행**.
@@ -106,6 +106,21 @@ Gemini 계정 로그인은 Node.js가 없으면 휴대용 Node.js를 자동으�
 ---
 
 ## Version history · 버전 기록
+
+### v1.6.0 (2026-10-06)
+
+- 프로젝트 지침 파일(Claude Code의 CLAUDE.md와 같은 방식): 작업 폴더의 NILA.md(프로젝트 지침)·NILA.local.md(개인)·nila_data/NILA.md(모든 폴더 공통)를 대화마다 자동으로 읽어 항상 참고 — 파일 안에서 '@.nila/guide.md' 한 줄로 다른 파일 포함
+- 검증 명령(.nila/harness.json): 파일을 바꾼 작업 끝에 verify 명령(테스트·검사)을 실행해 확인하고 실패하면 수정, /harness 로 바로 실행
+- 경로별 규칙(.nila/rules/*.md, 'paths: web/**'): 해당 파일을 다룰 때만 규칙을 넣음
+- 작업 기록(.nila/worklog.md): 작업이 끝날 때마다 요청·상태·변경 파일·결과를 자동 추가(설정에서 켜기, 기본 꺼짐), 최신 10개를 다음 대화에 자동 반영
+- /init: 폴더를 분석해 NILA.md·harness.json 초안 작성, /memory: 로드된 지침 파일과 토큰 수 표시
+- 모델 컨텍스트 크기의 약 1/8 안에서만 넣어 작은 로컬 모델(32K)에서도 안전, Claude Code·Codex CLI 연결에도 적용
+
+### v1.5.4 (2026-10-06)
+
+- 창을 오래 사용하지 않으면(Windows·브라우저가 창을 일시 정지) nila가 창이 닫힌 것으로 판단해 스스로 종료되던 문제 수정 — nila 창이 열려 있는 동안에는 종료하지 않음
+- [지금 다시 연결]을 누르면 '확인 중…'으로 진행 상태를 표시하고, 연결에 실패하면 원인·확인 방법·조치를 알림창으로 안내 (nila 미실행 / 응답 없음 / 재시작되어 접속 정보 불일치 / 오류 응답 구분, 로그 파일 위치, 진단 정보 복사)
+- 재연결이 계속 실패하면 상단 안내에 'nila 프로그램이 실행 중이 아닌 것 같습니다' 표시
 
 ### v1.5.3 (2026-10-02)
 
