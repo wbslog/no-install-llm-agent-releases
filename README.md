@@ -7,7 +7,7 @@
 **One file. Any LLM. Your whole PC.**
 **파일 하나로, 원하는 LLM으로, 내 PC의 실제 작업까지.**
 
-`v1.6.0` · 2026-10-06 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
+`v1.6.1` · 2026-10-06 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
 
 </div>
 
@@ -17,10 +17,10 @@
 
 | Platform · 플랫폼 | File · 파일 |
 |---|---|
-| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.6.0/nila-windows-x64.exe) |
-| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.6.0/nila-windows-arm64.exe) |
-| **macOS Apple Silicon (M1–M4)** | [nila-1.6.0-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.6.0/nila-1.6.0-macos-arm64.zip) |
-| macOS Intel | [nila-1.6.0-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.6.0/nila-1.6.0-macos-x64.zip) |
+| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.6.1/nila-windows-x64.exe) |
+| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.6.1/nila-windows-arm64.exe) |
+| **macOS Apple Silicon (M1–M4)** | [nila-1.6.1-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.6.1/nila-1.6.1-macos-arm64.zip) |
+| macOS Intel | [nila-1.6.1-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.6.1/nila-1.6.1-macos-x64.zip) |
 
 - **Windows** — Save the exe anywhere and double-click. If SmartScreen appears: *More info → Run anyway*.
   받은 exe를 원하는 폴더에 두고 실행하세요. SmartScreen 경고 시 **추가 정보 → 실행**.
@@ -106,6 +106,14 @@ Gemini 계정 로그인은 Node.js가 없으면 휴대용 Node.js를 자동으�
 ---
 
 ## Version history · 버전 기록
+
+### v1.6.1 (2026-10-06)
+
+- 자동 업데이트로 다시 시작된 nila가 열려 있는 창을 추적하지 못해, 창을 오래 두면 여전히 스스로 종료되어 재연결이 안 되던 문제 수정 — 업데이트 전 창의 프로세스를 넘겨받아 창이 실제로 닫힐 때만 종료
+- 사용량(토큰·크레딧) 한도로 작업이 멈추면 안내와 함께 [이어서 진행] / [새로 시작] 버튼 표시 — 한도가 초기화되거나 충전한 뒤 [이어서 진행]을 누르면 같은 대화에서 멈춘 지점부터 계속, [새로 시작]은 새 대화에 마지막 요청을 넣어 줌 (HTTP 402/429, 크레딧 부족, CLI 사용 한도 등 인식)
+- 컨텍스트 한도 초과로 작업이 멈추던 문제 자동 해결 강화: 서버가 알려준 숫자로 답변 길이 예약을 정확히 줄여 재시도, 한 요청 안에서 도구를 많이 쓴 긴 작업도 중간 단계까지 요약, 모든 도구 결과·이전 파일 내용 축소, 프로젝트 지침·기억 생략 순으로 단계적 재시도
+- 보내기 전에 크기를 미리 계산해 넘치기 전에 요약, 요약 요청 자체도 컨텍스트에 맞게 줄임
+- 모델 서버가 알려준 실제 컨텍스트 크기를 연결 설정에 자동 저장 (컨텍스트 크기를 비워 둔 경우)
 
 ### v1.6.0 (2026-10-06)
 
