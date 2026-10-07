@@ -7,7 +7,7 @@
 **One file. Any LLM. Your whole PC.**
 **파일 하나로, 원하는 LLM으로, 내 PC의 실제 작업까지.**
 
-`v1.6.1` · 2026-10-06 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
+`v1.7.0` · 2026-10-08 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
 
 </div>
 
@@ -17,10 +17,10 @@
 
 | Platform · 플랫폼 | File · 파일 |
 |---|---|
-| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.6.1/nila-windows-x64.exe) |
-| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.6.1/nila-windows-arm64.exe) |
-| **macOS Apple Silicon (M1–M4)** | [nila-1.6.1-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.6.1/nila-1.6.1-macos-arm64.zip) |
-| macOS Intel | [nila-1.6.1-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.6.1/nila-1.6.1-macos-x64.zip) |
+| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.0/nila-windows-x64.exe) |
+| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.0/nila-windows-arm64.exe) |
+| **macOS Apple Silicon (M1–M4)** | [nila-1.7.0-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.0/nila-1.7.0-macos-arm64.zip) |
+| macOS Intel | [nila-1.7.0-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.0/nila-1.7.0-macos-x64.zip) |
 
 - **Windows** — Save the exe anywhere and double-click. If SmartScreen appears: *More info → Run anyway*.
   받은 exe를 원하는 폴더에 두고 실행하세요. SmartScreen 경고 시 **추가 정보 → 실행**.
@@ -106,6 +106,13 @@ Gemini 계정 로그인은 Node.js가 없으면 휴대용 Node.js를 자동으�
 ---
 
 ## Version history · 버전 기록
+
+### v1.7.0 (2026-10-08)
+
+- 이미지 생성(generate_image): "고양이 수채화 그려줘", "로고 시안 만들어줘"처럼 요청하면 nila가 원하는 이미지를 자세히 묘사한 설명을 이미지 생성 API에 그대로 전달해 새 이미지를 만듦 — 사진·일러스트·로고·아이콘·배경·포스터 등 종류 제한 없음
+- 생성된 이미지는 작업 폴더의 generated/ 에 저장되고 채팅에 미리보기로 표시 (클릭하면 크게 보기, 되돌리기로 삭제 가능)
+- 설정 > 에이전트 > 이미지 생성: OpenAI(gpt-image-1, 비워 두면 ChatGPT API 연결의 키 사용) 또는 OpenAI 호환 /v1/images/generations 를 제공하는 로컬·사내 서버 주소·모델·기본 크기 지정
+- 수동 승인 모드에서는 생성 전에 설명·크기·모델을 보여주고 승인을 받음 (유료 API 비용 안내)
 
 ### v1.6.1 (2026-10-06)
 
