@@ -7,7 +7,7 @@
 **One file. Any LLM. Your whole PC.**
 **파일 하나로, 원하는 LLM으로, 내 PC의 실제 작업까지.**
 
-`v1.7.1` · 2026-10-08 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
+`v1.7.2` · 2026-10-08 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
 
 </div>
 
@@ -17,10 +17,10 @@
 
 | Platform · 플랫폼 | File · 파일 |
 |---|---|
-| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.1/nila-windows-x64.exe) |
-| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.1/nila-windows-arm64.exe) |
-| **macOS Apple Silicon (M1–M4)** | [nila-1.7.1-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.1/nila-1.7.1-macos-arm64.zip) |
-| macOS Intel | [nila-1.7.1-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.1/nila-1.7.1-macos-x64.zip) |
+| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.2/nila-windows-x64.exe) |
+| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.2/nila-windows-arm64.exe) |
+| **macOS Apple Silicon (M1–M4)** | [nila-1.7.2-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.2/nila-1.7.2-macos-arm64.zip) |
+| macOS Intel | [nila-1.7.2-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.2/nila-1.7.2-macos-x64.zip) |
 
 - **Windows** — Save the exe anywhere and double-click. If SmartScreen appears: *More info → Run anyway*.
   받은 exe를 원하는 폴더에 두고 실행하세요. SmartScreen 경고 시 **추가 정보 → 실행**.
@@ -106,6 +106,14 @@ Gemini 계정 로그인은 Node.js가 없으면 휴대용 Node.js를 자동으�
 ---
 
 ## Version history · 버전 기록
+
+### v1.7.2 (2026-10-08)
+
+- 설정 > 프로그램 설명에 개발자(Shin Do Yeon (신도연))와 이메일 주소(jinroh77@gmail.com) 표시
+- 처음 설치하면 LLM 연결 목록이 비어 있는 상태로 시작 — 사용자가 설정 > LLM 설정 > + 추가로 직접 등록 (등록 전에는 첫 화면·상단에 'LLM 연결 없음'과 등록 안내 표시, 연결을 모두 지우면 빈 목록 유지)
+- 자체 LLM 선택 항목에 'Ollama · vLLM · LM Studio 등' 표시 — OpenAI 호환 서버는 모두 자체 LLM으로 연결
+- /model: 입력창 바로 위 드롭다운에 등록된 연결의 모델과 각 서버의 모델 목록을 함께 표시, ↑↓·Enter 또는 마우스로 선택하면 그 모델로 대화를 이어서 진행 (/model 뒤에 글자를 치면 검색)
+- 작업이 진행 중일 때 모델을 바꾸면 진행 중인 작업은 원래 모델로 끝나고 다음 요청부터 새 모델 적용
 
 ### v1.7.1 (2026-10-08)
 

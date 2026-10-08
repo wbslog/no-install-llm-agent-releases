@@ -1,35 +1,33 @@
 {
-  "version": "1.7.1",
+  "version": "1.7.2",
   "date": "2026-10-08",
   "notes": [
-    "/image 명령: '/image [크기] 설명'으로 채팅 모델을 거치지 않고 입력한 설명 그대로 이미지 생성 (채팅 모델이 거절하는 요청도 이미지 모델에 바로 전달)",
-    "설정 \u003e 에이전트 \u003e 이미지 생성 \u003e 성인 콘텐츠 허용: 켜면 성인 인물의 선정적·노출 이미지 요청도 거절·순화하지 말고 그대로 생성하도록 채팅 모델에 지시 (로컬 이미지 모델용)",
-    "미성년자를 성적으로 묘사하는 이미지 요청은 설정과 관계없이 항상 차단",
-    "이미지 생성 \u003e LLM 연결과 같은 서버 사용: 체크하면 현재 LLM 연결의 주소·키로 이미지 요청 (채팅과 이미지를 한 서버에서 제공하는 경우), 모델을 비우면 서버 기본 모델 사용",
-    "PDF 내용 읽기 내장: 외부 프로그램 없이 PDF 글자를 페이지별로 추출 — 자체 LLM·ChatGPT·Gemini에서도 PDF 요약 가능 (한글 PDF 포함, 스캔 이미지 PDF·암호 PDF는 안내)",
-    "엑셀·워드·파워포인트·PDF를 첨부하면 nila가 바로 내용을 추출해 질문과 함께 전달 — 도구 호출을 못 하는 모델도 첨부 문서를 바로 요약 (모델 컨텍스트의 약 40%까지, 긴 문서는 앞부분 + 나머지는 이어 읽기)",
-    "설정 \u003e 프로그램 설명에 현재·최신 버전, 릴리즈(다운로드) GitHub 주소, 제작자, 최초 제작일 표시"
+    "설정 \u003e 프로그램 설명에 개발자(Shin Do Yeon (신도연))와 이메일 주소(jinroh77@gmail.com) 표시",
+    "처음 설치하면 LLM 연결 목록이 비어 있는 상태로 시작 — 사용자가 설정 \u003e LLM 설정 \u003e + 추가로 직접 등록 (등록 전에는 첫 화면·상단에 'LLM 연결 없음'과 등록 안내 표시, 연결을 모두 지우면 빈 목록 유지)",
+    "자체 LLM 선택 항목에 'Ollama · vLLM · LM Studio 등' 표시 — OpenAI 호환 서버는 모두 자체 LLM으로 연결",
+    "/model: 입력창 바로 위 드롭다운에 등록된 연결의 모델과 각 서버의 모델 목록을 함께 표시, ↑↓·Enter 또는 마우스로 선택하면 그 모델로 대화를 이어서 진행 (/model 뒤에 글자를 치면 검색)",
+    "작업이 진행 중일 때 모델을 바꾸면 진행 중인 작업은 원래 모델로 끝나고 다음 요청부터 새 모델 적용"
   ],
   "assets": {
     "darwin-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.1/nila-1.7.1-macos-x64.zip",
-      "sha256": "6e75a8c4ac3d67bcb560b34e8637be349f6c3e7c76430a2c2499f92e70b330ce",
-      "size": 4632565
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.2/nila-1.7.2-macos-x64.zip",
+      "sha256": "3443a774b1dc506fb0517f79fd35a1faf12cd77a42d50edaf221486b62fc97e7",
+      "size": 4633288
     },
     "darwin-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.1/nila-1.7.1-macos-arm64.zip",
-      "sha256": "1ab29b1e1bdb3e3cf2d5ee80800351a5abdd5632acbacedc46406ba99d66a4a9",
-      "size": 4311754
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.2/nila-1.7.2-macos-arm64.zip",
+      "sha256": "491c758debc3c7401d4ca1fd7ea4ac0066d17e791156f20399d2a8ba3767925b",
+      "size": 4312650
     },
     "windows-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.1/nila-windows-x64.exe",
-      "sha256": "b13a42b54589598261b1ab98b2423b00d88918dced2c558eba7799fd1e5c2a56",
-      "size": 10849280
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.2/nila-windows-x64.exe",
+      "sha256": "05f5ea11dc4aa072f600c1d2af0d6552b7d935818cbee3a977f9b917df8d22d2",
+      "size": 10854912
     },
     "windows-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.1/nila-windows-arm64.exe",
-      "sha256": "77250675664fd25b6e7fbfbd7508a7938edf87f9e91f79e9a84b3b3d8c413562",
-      "size": 9923072
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.2/nila-windows-arm64.exe",
+      "sha256": "9bfae4dfc1782b579ffb1e8c055ceb0e79e52289c6335afb7a363ab815301547",
+      "size": 9928192
     }
   }
 }
