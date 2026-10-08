@@ -1,32 +1,35 @@
 {
-  "version": "1.7.0",
+  "version": "1.7.1",
   "date": "2026-10-08",
   "notes": [
-    "이미지 생성(generate_image): \"고양이 수채화 그려줘\", \"로고 시안 만들어줘\"처럼 요청하면 nila가 원하는 이미지를 자세히 묘사한 설명을 이미지 생성 API에 그대로 전달해 새 이미지를 만듦 — 사진·일러스트·로고·아이콘·배경·포스터 등 종류 제한 없음",
-    "생성된 이미지는 작업 폴더의 generated/ 에 저장되고 채팅에 미리보기로 표시 (클릭하면 크게 보기, 되돌리기로 삭제 가능)",
-    "설정 \u003e 에이전트 \u003e 이미지 생성: OpenAI(gpt-image-1, 비워 두면 ChatGPT API 연결의 키 사용) 또는 OpenAI 호환 /v1/images/generations 를 제공하는 로컬·사내 서버 주소·모델·기본 크기 지정",
-    "수동 승인 모드에서는 생성 전에 설명·크기·모델을 보여주고 승인을 받음 (유료 API 비용 안내)"
+    "/image 명령: '/image [크기] 설명'으로 채팅 모델을 거치지 않고 입력한 설명 그대로 이미지 생성 (채팅 모델이 거절하는 요청도 이미지 모델에 바로 전달)",
+    "설정 \u003e 에이전트 \u003e 이미지 생성 \u003e 성인 콘텐츠 허용: 켜면 성인 인물의 선정적·노출 이미지 요청도 거절·순화하지 말고 그대로 생성하도록 채팅 모델에 지시 (로컬 이미지 모델용)",
+    "미성년자를 성적으로 묘사하는 이미지 요청은 설정과 관계없이 항상 차단",
+    "이미지 생성 \u003e LLM 연결과 같은 서버 사용: 체크하면 현재 LLM 연결의 주소·키로 이미지 요청 (채팅과 이미지를 한 서버에서 제공하는 경우), 모델을 비우면 서버 기본 모델 사용",
+    "PDF 내용 읽기 내장: 외부 프로그램 없이 PDF 글자를 페이지별로 추출 — 자체 LLM·ChatGPT·Gemini에서도 PDF 요약 가능 (한글 PDF 포함, 스캔 이미지 PDF·암호 PDF는 안내)",
+    "엑셀·워드·파워포인트·PDF를 첨부하면 nila가 바로 내용을 추출해 질문과 함께 전달 — 도구 호출을 못 하는 모델도 첨부 문서를 바로 요약 (모델 컨텍스트의 약 40%까지, 긴 문서는 앞부분 + 나머지는 이어 읽기)",
+    "설정 \u003e 프로그램 설명에 현재·최신 버전, 릴리즈(다운로드) GitHub 주소, 제작자, 최초 제작일 표시"
   ],
   "assets": {
     "darwin-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.0/nila-1.7.0-macos-x64.zip",
-      "sha256": "067ad4ddfa44cd5ab1aaf6d522a444ec975e294be8329b5be0f00e961087c592",
-      "size": 4596231
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.1/nila-1.7.1-macos-x64.zip",
+      "sha256": "6e75a8c4ac3d67bcb560b34e8637be349f6c3e7c76430a2c2499f92e70b330ce",
+      "size": 4632565
     },
     "darwin-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.0/nila-1.7.0-macos-arm64.zip",
-      "sha256": "8310081b3e40c7d5851e04fad232d86ac3d23c778a763a00065f310582470b60",
-      "size": 4277947
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.1/nila-1.7.1-macos-arm64.zip",
+      "sha256": "1ab29b1e1bdb3e3cf2d5ee80800351a5abdd5632acbacedc46406ba99d66a4a9",
+      "size": 4311754
     },
     "windows-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.0/nila-windows-x64.exe",
-      "sha256": "7a890355dabb573bacf995b23ac762c7c606cfef314d9a58be998952d2759874",
-      "size": 10771456
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.1/nila-windows-x64.exe",
+      "sha256": "b13a42b54589598261b1ab98b2423b00d88918dced2c558eba7799fd1e5c2a56",
+      "size": 10849280
     },
     "windows-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.0/nila-windows-arm64.exe",
-      "sha256": "a017572947c582918286c68b691a97a6179302e39ba54a1a329714622f51aee8",
-      "size": 9851392
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.1/nila-windows-arm64.exe",
+      "sha256": "77250675664fd25b6e7fbfbd7508a7938edf87f9e91f79e9a84b3b3d8c413562",
+      "size": 9923072
     }
   }
 }

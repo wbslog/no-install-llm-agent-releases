@@ -7,7 +7,7 @@
 **One file. Any LLM. Your whole PC.**
 **파일 하나로, 원하는 LLM으로, 내 PC의 실제 작업까지.**
 
-`v1.7.0` · 2026-10-08 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
+`v1.7.1` · 2026-10-08 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
 
 </div>
 
@@ -17,10 +17,10 @@
 
 | Platform · 플랫폼 | File · 파일 |
 |---|---|
-| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.0/nila-windows-x64.exe) |
-| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.0/nila-windows-arm64.exe) |
-| **macOS Apple Silicon (M1–M4)** | [nila-1.7.0-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.0/nila-1.7.0-macos-arm64.zip) |
-| macOS Intel | [nila-1.7.0-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.0/nila-1.7.0-macos-x64.zip) |
+| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.1/nila-windows-x64.exe) |
+| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.1/nila-windows-arm64.exe) |
+| **macOS Apple Silicon (M1–M4)** | [nila-1.7.1-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.1/nila-1.7.1-macos-arm64.zip) |
+| macOS Intel | [nila-1.7.1-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.1/nila-1.7.1-macos-x64.zip) |
 
 - **Windows** — Save the exe anywhere and double-click. If SmartScreen appears: *More info → Run anyway*.
   받은 exe를 원하는 폴더에 두고 실행하세요. SmartScreen 경고 시 **추가 정보 → 실행**.
@@ -106,6 +106,16 @@ Gemini 계정 로그인은 Node.js가 없으면 휴대용 Node.js를 자동으�
 ---
 
 ## Version history · 버전 기록
+
+### v1.7.1 (2026-10-08)
+
+- /image 명령: '/image [크기] 설명'으로 채팅 모델을 거치지 않고 입력한 설명 그대로 이미지 생성 (채팅 모델이 거절하는 요청도 이미지 모델에 바로 전달)
+- 설정 > 에이전트 > 이미지 생성 > 성인 콘텐츠 허용: 켜면 성인 인물의 선정적·노출 이미지 요청도 거절·순화하지 말고 그대로 생성하도록 채팅 모델에 지시 (로컬 이미지 모델용)
+- 미성년자를 성적으로 묘사하는 이미지 요청은 설정과 관계없이 항상 차단
+- 이미지 생성 > LLM 연결과 같은 서버 사용: 체크하면 현재 LLM 연결의 주소·키로 이미지 요청 (채팅과 이미지를 한 서버에서 제공하는 경우), 모델을 비우면 서버 기본 모델 사용
+- PDF 내용 읽기 내장: 외부 프로그램 없이 PDF 글자를 페이지별로 추출 — 자체 LLM·ChatGPT·Gemini에서도 PDF 요약 가능 (한글 PDF 포함, 스캔 이미지 PDF·암호 PDF는 안내)
+- 엑셀·워드·파워포인트·PDF를 첨부하면 nila가 바로 내용을 추출해 질문과 함께 전달 — 도구 호출을 못 하는 모델도 첨부 문서를 바로 요약 (모델 컨텍스트의 약 40%까지, 긴 문서는 앞부분 + 나머지는 이어 읽기)
+- 설정 > 프로그램 설명에 현재·최신 버전, 릴리즈(다운로드) GitHub 주소, 제작자, 최초 제작일 표시
 
 ### v1.7.0 (2026-10-08)
 
