@@ -7,7 +7,7 @@
 **One file. Any LLM. Your whole PC.**
 **파일 하나로, 원하는 LLM으로, 내 PC의 실제 작업까지.**
 
-`v1.7.6` · 2026-10-13 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
+`v1.7.7` · 2026-10-13 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
 
 </div>
 
@@ -17,10 +17,10 @@
 
 | Platform · 플랫폼 | File · 파일 |
 |---|---|
-| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.6/nila-windows-x64.exe) |
-| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.6/nila-windows-arm64.exe) |
-| **macOS Apple Silicon (M1–M4)** | [nila-1.7.6-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.6/nila-1.7.6-macos-arm64.zip) |
-| macOS Intel | [nila-1.7.6-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.6/nila-1.7.6-macos-x64.zip) |
+| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.7/nila-windows-x64.exe) |
+| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.7/nila-windows-arm64.exe) |
+| **macOS Apple Silicon (M1–M4)** | [nila-1.7.7-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.7/nila-1.7.7-macos-arm64.zip) |
+| macOS Intel | [nila-1.7.7-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.7/nila-1.7.7-macos-x64.zip) |
 
 - **Windows** — Save the exe anywhere and double-click. If SmartScreen appears: *More info → Run anyway*.
   받은 exe를 원하는 폴더에 두고 실행하세요. SmartScreen 경고 시 **추가 정보 → 실행**.
@@ -106,6 +106,13 @@ Gemini 계정 로그인은 Node.js가 없으면 휴대용 Node.js를 자동으�
 ---
 
 ## Version history · 버전 기록
+
+### v1.7.7 (2026-10-13)
+
+- 자체 LLM(vLLM 등) '컨텍스트 한도 초과'(입력 + 답변 예약이 한도를 넘음) 자동 복구 개선: 답변 길이 예약(max_tokens)을 빼고 다시 보내 서버가 남은 공간만큼 답하게 함 — 1토큰 차이로 계속 실패하던 문제
+- vLLM 오류의 '최소(at least) N 입력 토큰'을 실제 입력량으로 믿지 않음 (그 값으로 계산한 예약이 계속 넘치던 원인)
+- 새 자체 LLM 연결의 최대 출력 토큰 기본값 8192 → 0(서버 자동) — 32K 모델에서 컨텍스트의 1/4을 답변용으로 미리 잡지 않음
+- 컨텍스트 정리 알림이 요약한 메시지 수를 항상 '0개'로 표시하던 문제
 
 ### v1.7.6 (2026-10-13)
 

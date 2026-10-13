@@ -1,30 +1,32 @@
 {
-  "version": "1.7.6",
+  "version": "1.7.7",
   "date": "2026-10-13",
   "notes": [
-    "메일 템플릿을 가로 폭 100%로 — 메일 프로그램 창 폭을 가득 채워 표·본문이 넓게 보임 (nila 안의 메일 미리보기 창도 넓힘)",
-    "메일 발송도 입력창의 승인 모드를 따름: 자동이면 바로 발송, 수동이면 받는 사람·제목·내용을 보여주고 승인 후 발송 ('보내기 전에 항상 확인' 옵션 제거)"
+    "자체 LLM(vLLM 등) '컨텍스트 한도 초과'(입력 + 답변 예약이 한도를 넘음) 자동 복구 개선: 답변 길이 예약(max_tokens)을 빼고 다시 보내 서버가 남은 공간만큼 답하게 함 — 1토큰 차이로 계속 실패하던 문제",
+    "vLLM 오류의 '최소(at least) N 입력 토큰'을 실제 입력량으로 믿지 않음 (그 값으로 계산한 예약이 계속 넘치던 원인)",
+    "새 자체 LLM 연결의 최대 출력 토큰 기본값 8192 → 0(서버 자동) — 32K 모델에서 컨텍스트의 1/4을 답변용으로 미리 잡지 않음",
+    "컨텍스트 정리 알림이 요약한 메시지 수를 항상 '0개'로 표시하던 문제"
   ],
   "assets": {
     "darwin-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.6/nila-1.7.6-macos-x64.zip",
-      "sha256": "18cb0db8cbee2e222d4cdb8228cc3828a7ad319f11b5e07947d6d62096bb2c50",
-      "size": 4714301
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.7/nila-1.7.7-macos-x64.zip",
+      "sha256": "e070732d3cfd603bc3f08b08fdd66d0da9a52bcbbad5b47b740bc53b140c33e5",
+      "size": 4715276
     },
     "darwin-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.6/nila-1.7.6-macos-arm64.zip",
-      "sha256": "286fd68700e1ee7ad0e3db0d1c8389128869afc020eeea9f258b161423e238e3",
-      "size": 4387366
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.7/nila-1.7.7-macos-arm64.zip",
+      "sha256": "b2caf7c41bc359baa18c6a76f23045d5d27e1d30d3cdbd4af568d665fbe66952",
+      "size": 4387906
     },
     "windows-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.6/nila-windows-x64.exe",
-      "sha256": "525f42ea351747f8bf6e8e211224f2206275a84e406cee90ef192e30ddc10f63",
-      "size": 11073024
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.7/nila-windows-x64.exe",
+      "sha256": "41791e5e2290ac9fbd9b773596513e624f13a17c159ca205f1e9003156f51c19",
+      "size": 11075072
     },
     "windows-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.6/nila-windows-arm64.exe",
-      "sha256": "92371a58d431480817db6961b7c41fe28e62bd64a1d2bfe8e90b1ae48454c375",
-      "size": 10128896
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.7/nila-windows-arm64.exe",
+      "sha256": "72676d20f28d2964fc0f205059035e058caefd0879e65fa15a61c324e75e3898",
+      "size": 10130944
     }
   }
 }
