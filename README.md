@@ -7,7 +7,7 @@
 **One file. Any LLM. Your whole PC.**
 **파일 하나로, 원하는 LLM으로, 내 PC의 실제 작업까지.**
 
-`v1.7.3` · 2026-10-08 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
+`v1.7.4` · 2026-10-13 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
 
 </div>
 
@@ -17,10 +17,10 @@
 
 | Platform · 플랫폼 | File · 파일 |
 |---|---|
-| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.3/nila-windows-x64.exe) |
-| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.3/nila-windows-arm64.exe) |
-| **macOS Apple Silicon (M1–M4)** | [nila-1.7.3-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.3/nila-1.7.3-macos-arm64.zip) |
-| macOS Intel | [nila-1.7.3-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.3/nila-1.7.3-macos-x64.zip) |
+| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.4/nila-windows-x64.exe) |
+| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.4/nila-windows-arm64.exe) |
+| **macOS Apple Silicon (M1–M4)** | [nila-1.7.4-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.4/nila-1.7.4-macos-arm64.zip) |
+| macOS Intel | [nila-1.7.4-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.4/nila-1.7.4-macos-x64.zip) |
 
 - **Windows** — Save the exe anywhere and double-click. If SmartScreen appears: *More info → Run anyway*.
   받은 exe를 원하는 폴더에 두고 실행하세요. SmartScreen 경고 시 **추가 정보 → 실행**.
@@ -106,6 +106,12 @@ Gemini 계정 로그인은 Node.js가 없으면 휴대용 Node.js를 자동으�
 ---
 
 ## Version history · 버전 기록
+
+### v1.7.4 (2026-10-13)
+
+- '…요약해서 메일 보내줘' 요청을 nila가 직접 알아보고 모델에 메일 도구를 쓸 수 있다고 알려줌 — 같은 대화에서 예전에 '메일 기능이 없다'고 답했어도 이제 발송
+- 메일 계정이 없거나, 계정 로그인(CLI) 연결이거나, 도구 사용이 꺼진 연결이면 채팅에 이유와 해결 방법을 바로 안내
+- 받는 사람을 말하지 않으면 기본 받는 사람, 없으면 내 메일 주소로 보냄 (보내기 전 승인 화면에서 확인)
 
 ### v1.7.3 (2026-10-08)
 
