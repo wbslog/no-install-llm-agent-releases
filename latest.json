@@ -1,32 +1,29 @@
 {
-  "version": "1.7.5",
+  "version": "1.7.6",
   "date": "2026-10-13",
   "notes": [
-    "메일: 아이디에 네이버·다음 ID만 넣어도(예: jinroh77) SMTP 서버로 보내는 주소를 만들어 바로 사용 (smtp.naver.com → jinroh77@naver.com) — 메일 설정을 입력했는데 '등록되지 않음'으로 나오던 문제",
-    "메일을 보낼 수 없을 때 무엇이 빠졌는지 구체적으로 안내 (기능 꺼짐 / SMTP 서버 없음 / 보내는 사람 주소 없음), 설정 \u003e 메일 상태 줄도 같은 기준",
-    "실행 속도: 채팅 목록 색인(chat_index.json)으로 시작할 때 바뀐 채팅만 읽음 — 큰 채팅이 많을 때 네트워크 드라이브 기준 창 준비 4.8초 → 0.3초",
-    "오래된 기록 정리를 창을 띄운 뒤 백그라운드에서 실행",
-    "nila_data가 네트워크 드라이브(NAS 등)에 있으면 앱 창의 브라우저 프로필은 이 PC 로컬(%LOCALAPPDATA%\\nila)에 둬서 창이 빨리 열림"
+    "메일 템플릿을 가로 폭 100%로 — 메일 프로그램 창 폭을 가득 채워 표·본문이 넓게 보임 (nila 안의 메일 미리보기 창도 넓힘)",
+    "메일 발송도 입력창의 승인 모드를 따름: 자동이면 바로 발송, 수동이면 받는 사람·제목·내용을 보여주고 승인 후 발송 ('보내기 전에 항상 확인' 옵션 제거)"
   ],
   "assets": {
     "darwin-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.5/nila-1.7.5-macos-x64.zip",
-      "sha256": "69f4cefeb2192f63188b310ac6f10b39e3a92256dd98e66ec01e19e8d756ab88",
-      "size": 4714342
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.6/nila-1.7.6-macos-x64.zip",
+      "sha256": "18cb0db8cbee2e222d4cdb8228cc3828a7ad319f11b5e07947d6d62096bb2c50",
+      "size": 4714301
     },
     "darwin-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.5/nila-1.7.5-macos-arm64.zip",
-      "sha256": "a35eff4b0c511c20bf472a50be1be957cc4307cfd43c6d89837847ca431a1717",
-      "size": 4387474
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.6/nila-1.7.6-macos-arm64.zip",
+      "sha256": "286fd68700e1ee7ad0e3db0d1c8389128869afc020eeea9f258b161423e238e3",
+      "size": 4387366
     },
     "windows-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.5/nila-windows-x64.exe",
-      "sha256": "0bb7e97fc893be900a1ff29f2125925cef21e8aeb1672cdebbb4880ec54bab76",
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.6/nila-windows-x64.exe",
+      "sha256": "525f42ea351747f8bf6e8e211224f2206275a84e406cee90ef192e30ddc10f63",
       "size": 11073024
     },
     "windows-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.5/nila-windows-arm64.exe",
-      "sha256": "92356919f7284e03fce50199b4f51c9d458feb1bac786519157f08cdc4ac9eb1",
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.6/nila-windows-arm64.exe",
+      "sha256": "92371a58d431480817db6961b7c41fe28e62bd64a1d2bfe8e90b1ae48454c375",
       "size": 10128896
     }
   }
