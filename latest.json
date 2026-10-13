@@ -1,33 +1,38 @@
 {
-  "version": "1.7.2",
+  "version": "1.7.3",
   "date": "2026-10-08",
   "notes": [
-    "설정 \u003e 프로그램 설명에 개발자(Shin Do Yeon (신도연))와 이메일 주소(jinroh77@gmail.com) 표시",
-    "처음 설치하면 LLM 연결 목록이 비어 있는 상태로 시작 — 사용자가 설정 \u003e LLM 설정 \u003e + 추가로 직접 등록 (등록 전에는 첫 화면·상단에 'LLM 연결 없음'과 등록 안내 표시, 연결을 모두 지우면 빈 목록 유지)",
-    "자체 LLM 선택 항목에 'Ollama · vLLM · LM Studio 등' 표시 — OpenAI 호환 서버는 모두 자체 LLM으로 연결",
-    "/model: 입력창 바로 위 드롭다운에 등록된 연결의 모델과 각 서버의 모델 목록을 함께 표시, ↑↓·Enter 또는 마우스로 선택하면 그 모델로 대화를 이어서 진행 (/model 뒤에 글자를 치면 검색)",
-    "작업이 진행 중일 때 모델을 바꾸면 진행 중인 작업은 원래 모델로 끝나고 다음 요청부터 새 모델 적용"
+    "Windows 트레이 아이콘: 창의 X를 눌러도 nila가 트레이에 남아 계속 실행(진행 중인 작업 포함), 아이콘을 클릭하면 창이 다시 열림",
+    "완전 종료는 트레이 아이콘 오른쪽 클릭 \u003e 종료 또는 좌측 하단 프로그램 종료 — 창을 처음 닫을 때 트레이 안내 알림 표시",
+    "nila가 트레이에 있을 때 nila.exe를 다시 실행하면 새로 띄우지 않고 기존 nila의 창을 열거나 앞으로 가져옴",
+    "설정 \u003e 일반 \u003e '창을 닫아도(X) 트레이에서 계속 실행' (기본 켜짐, 끄면 예전처럼 창을 닫을 때 종료)",
+    "메일 보내기(send_email): '보고서 작성해서 메일로 보내줘'라고 하면 내용을 정리해 제목 머리글·소제목·표·목록이 들어간 HTML 메일로 만들어 내 메일 계정으로 발송, 작업 폴더 파일 첨부 가능",
+    "설정 \u003e 메일: Gmail·네이버·다음·Outlook·네이버웍스 자동 입력, SMTP 서버·포트·보안·계정·보내는 사람·기본 받는 사람·서명, [테스트 메일 보내기]",
+    "메일은 보내기 전에 항상 받는 사람·제목·내용을 보여주고 승인 후 발송(자동 승인 모드 포함, 설정에서 끌 수 있음) — [메일 미리보기]로 실제 메일 모양 확인",
+    "메일 발송 성공 시 채팅에 '메일 발송 성공'과 전송 시각·소요 시간·전송 용량·받는 사람 표시 (실패 시 원인과 해결 방법 안내)",
+    "채팅 목록: 처리 중인 채팅은 점이 깜빡이고, 다른 채팅을 보는 동안 끝난 작업은 작은 초록 점으로 표시 (열면 사라짐)",
+    "처음 사용할 때 LLM 연결 추가 화면에 주소·API 키·모델이 미리 채워지지 않음 — 모두 사용자가 입력 (공식 서비스 주소는 비워 두면 자동)"
   ],
   "assets": {
     "darwin-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.2/nila-1.7.2-macos-x64.zip",
-      "sha256": "3443a774b1dc506fb0517f79fd35a1faf12cd77a42d50edaf221486b62fc97e7",
-      "size": 4633288
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.3/nila-1.7.3-macos-x64.zip",
+      "sha256": "6e0d9d3903dc5c682fac1a97b8aa7f641475d88e456f0f2bddc8b076649b4350",
+      "size": 4710729
     },
     "darwin-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.2/nila-1.7.2-macos-arm64.zip",
-      "sha256": "491c758debc3c7401d4ca1fd7ea4ac0066d17e791156f20399d2a8ba3767925b",
-      "size": 4312650
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.3/nila-1.7.3-macos-arm64.zip",
+      "sha256": "f8d40a90c3e85b1e9823f19d7db339241b518f15ba5dd3419d096cb219805f85",
+      "size": 4383582
     },
     "windows-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.2/nila-windows-x64.exe",
-      "sha256": "05f5ea11dc4aa072f600c1d2af0d6552b7d935818cbee3a977f9b917df8d22d2",
-      "size": 10854912
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.3/nila-windows-x64.exe",
+      "sha256": "bc3daed5b45876ff19e4ba19ef4b32a72d8d1b0f44c22e6437cf3c039f01b9cd",
+      "size": 11060736
     },
     "windows-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.2/nila-windows-arm64.exe",
-      "sha256": "9bfae4dfc1782b579ffb1e8c055ceb0e79e52289c6335afb7a363ab815301547",
-      "size": 9928192
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.3/nila-windows-arm64.exe",
+      "sha256": "e7aecb56db4daf20425bd00b30ff49b5204a87cd9129928b8a59f02411f0309b",
+      "size": 10118144
     }
   }
 }

@@ -7,7 +7,7 @@
 **One file. Any LLM. Your whole PC.**
 **파일 하나로, 원하는 LLM으로, 내 PC의 실제 작업까지.**
 
-`v1.7.2` · 2026-10-08 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
+`v1.7.3` · 2026-10-08 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
 
 </div>
 
@@ -17,10 +17,10 @@
 
 | Platform · 플랫폼 | File · 파일 |
 |---|---|
-| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.2/nila-windows-x64.exe) |
-| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.2/nila-windows-arm64.exe) |
-| **macOS Apple Silicon (M1–M4)** | [nila-1.7.2-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.2/nila-1.7.2-macos-arm64.zip) |
-| macOS Intel | [nila-1.7.2-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.2/nila-1.7.2-macos-x64.zip) |
+| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.3/nila-windows-x64.exe) |
+| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.3/nila-windows-arm64.exe) |
+| **macOS Apple Silicon (M1–M4)** | [nila-1.7.3-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.3/nila-1.7.3-macos-arm64.zip) |
+| macOS Intel | [nila-1.7.3-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.3/nila-1.7.3-macos-x64.zip) |
 
 - **Windows** — Save the exe anywhere and double-click. If SmartScreen appears: *More info → Run anyway*.
   받은 exe를 원하는 폴더에 두고 실행하세요. SmartScreen 경고 시 **추가 정보 → 실행**.
@@ -106,6 +106,19 @@ Gemini 계정 로그인은 Node.js가 없으면 휴대용 Node.js를 자동으�
 ---
 
 ## Version history · 버전 기록
+
+### v1.7.3 (2026-10-08)
+
+- Windows 트레이 아이콘: 창의 X를 눌러도 nila가 트레이에 남아 계속 실행(진행 중인 작업 포함), 아이콘을 클릭하면 창이 다시 열림
+- 완전 종료는 트레이 아이콘 오른쪽 클릭 > 종료 또는 좌측 하단 프로그램 종료 — 창을 처음 닫을 때 트레이 안내 알림 표시
+- nila가 트레이에 있을 때 nila.exe를 다시 실행하면 새로 띄우지 않고 기존 nila의 창을 열거나 앞으로 가져옴
+- 설정 > 일반 > '창을 닫아도(X) 트레이에서 계속 실행' (기본 켜짐, 끄면 예전처럼 창을 닫을 때 종료)
+- 메일 보내기(send_email): '보고서 작성해서 메일로 보내줘'라고 하면 내용을 정리해 제목 머리글·소제목·표·목록이 들어간 HTML 메일로 만들어 내 메일 계정으로 발송, 작업 폴더 파일 첨부 가능
+- 설정 > 메일: Gmail·네이버·다음·Outlook·네이버웍스 자동 입력, SMTP 서버·포트·보안·계정·보내는 사람·기본 받는 사람·서명, [테스트 메일 보내기]
+- 메일은 보내기 전에 항상 받는 사람·제목·내용을 보여주고 승인 후 발송(자동 승인 모드 포함, 설정에서 끌 수 있음) — [메일 미리보기]로 실제 메일 모양 확인
+- 메일 발송 성공 시 채팅에 '메일 발송 성공'과 전송 시각·소요 시간·전송 용량·받는 사람 표시 (실패 시 원인과 해결 방법 안내)
+- 채팅 목록: 처리 중인 채팅은 점이 깜빡이고, 다른 채팅을 보는 동안 끝난 작업은 작은 초록 점으로 표시 (열면 사라짐)
+- 처음 사용할 때 LLM 연결 추가 화면에 주소·API 키·모델이 미리 채워지지 않음 — 모두 사용자가 입력 (공식 서비스 주소는 비워 두면 자동)
 
 ### v1.7.2 (2026-10-08)
 
