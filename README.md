@@ -7,7 +7,7 @@
 **One file. Any LLM. Your whole PC.**
 **파일 하나로, 원하는 LLM으로, 내 PC의 실제 작업까지.**
 
-`v1.7.4` · 2026-10-13 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
+`v1.7.5` · 2026-10-13 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
 
 </div>
 
@@ -17,10 +17,10 @@
 
 | Platform · 플랫폼 | File · 파일 |
 |---|---|
-| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.4/nila-windows-x64.exe) |
-| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.4/nila-windows-arm64.exe) |
-| **macOS Apple Silicon (M1–M4)** | [nila-1.7.4-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.4/nila-1.7.4-macos-arm64.zip) |
-| macOS Intel | [nila-1.7.4-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.4/nila-1.7.4-macos-x64.zip) |
+| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.5/nila-windows-x64.exe) |
+| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.5/nila-windows-arm64.exe) |
+| **macOS Apple Silicon (M1–M4)** | [nila-1.7.5-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.5/nila-1.7.5-macos-arm64.zip) |
+| macOS Intel | [nila-1.7.5-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.5/nila-1.7.5-macos-x64.zip) |
 
 - **Windows** — Save the exe anywhere and double-click. If SmartScreen appears: *More info → Run anyway*.
   받은 exe를 원하는 폴더에 두고 실행하세요. SmartScreen 경고 시 **추가 정보 → 실행**.
@@ -106,6 +106,14 @@ Gemini 계정 로그인은 Node.js가 없으면 휴대용 Node.js를 자동으�
 ---
 
 ## Version history · 버전 기록
+
+### v1.7.5 (2026-10-13)
+
+- 메일: 아이디에 네이버·다음 ID만 넣어도(예: jinroh77) SMTP 서버로 보내는 주소를 만들어 바로 사용 (smtp.naver.com → jinroh77@naver.com) — 메일 설정을 입력했는데 '등록되지 않음'으로 나오던 문제
+- 메일을 보낼 수 없을 때 무엇이 빠졌는지 구체적으로 안내 (기능 꺼짐 / SMTP 서버 없음 / 보내는 사람 주소 없음), 설정 > 메일 상태 줄도 같은 기준
+- 실행 속도: 채팅 목록 색인(chat_index.json)으로 시작할 때 바뀐 채팅만 읽음 — 큰 채팅이 많을 때 네트워크 드라이브 기준 창 준비 4.8초 → 0.3초
+- 오래된 기록 정리를 창을 띄운 뒤 백그라운드에서 실행
+- nila_data가 네트워크 드라이브(NAS 등)에 있으면 앱 창의 브라우저 프로필은 이 PC 로컬(%LOCALAPPDATA%\nila)에 둬서 창이 빨리 열림
 
 ### v1.7.4 (2026-10-13)
 
