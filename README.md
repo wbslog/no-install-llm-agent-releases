@@ -7,7 +7,7 @@
 **One file. Any LLM. Your whole PC.**
 **파일 하나로, 원하는 LLM으로, 내 PC의 실제 작업까지.**
 
-`v1.7.7` · 2026-10-13 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
+`v1.7.8` · 2026-10-14 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
 
 </div>
 
@@ -17,10 +17,10 @@
 
 | Platform · 플랫폼 | File · 파일 |
 |---|---|
-| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.7/nila-windows-x64.exe) |
-| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.7/nila-windows-arm64.exe) |
-| **macOS Apple Silicon (M1–M4)** | [nila-1.7.7-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.7/nila-1.7.7-macos-arm64.zip) |
-| macOS Intel | [nila-1.7.7-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.7/nila-1.7.7-macos-x64.zip) |
+| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.8/nila-windows-x64.exe) |
+| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.8/nila-windows-arm64.exe) |
+| **macOS Apple Silicon (M1–M4)** | [nila-1.7.8-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.8/nila-1.7.8-macos-arm64.zip) |
+| macOS Intel | [nila-1.7.8-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.8/nila-1.7.8-macos-x64.zip) |
 
 - **Windows** — Save the exe anywhere and double-click. If SmartScreen appears: *More info → Run anyway*.
   받은 exe를 원하는 폴더에 두고 실행하세요. SmartScreen 경고 시 **추가 정보 → 실행**.
@@ -106,6 +106,14 @@ Gemini 계정 로그인은 Node.js가 없으면 휴대용 Node.js를 자동으�
 ---
 
 ## Version history · 버전 기록
+
+### v1.7.8 (2026-10-14)
+
+- 좌측 하단 토큰 사용량 → LLM 서버가 알려 주는 할당량(quota)이 있으면 '토큰 할당량'으로 대체: 남은 토큰, 사용률 게이지(70% 주황·90% 빨강), 이번 달 사용량·요청 수, 누적 사용량·요청 수, 계정 만료일
+- 할당량은 서버 값을 우선(다른 키·에이전트·웹 채팅 사용량 포함): 작업 시작 전 GET /usage로 확인, 답변마다 응답의 quota로 실시간 갱신, 5분마다·창으로 돌아올 때 다시 확인 (토큰 소모 없음)
+- 남은 토큰이 0이면 작업을 시작하지 않고 '관리자에게 충전 요청' 안내, 총 할당량의 10% 미만이 되면 한 번 경고, 이번 요청 예상 사용량이 남은 토큰보다 많으면 전송 전에 확인
+- 서버 오류의 detail 메시지(401·402·403·422)를 그대로 표시, 402(토큰 부족)는 재시도하지 않고 즉시 중단
+- 할당량을 알려 주지 않는 서버(공식 OpenAI·Gemini·Claude, 일반 vLLM/Ollama)는 기존 토큰 사용량 표시를 그대로 사용
 
 ### v1.7.7 (2026-10-13)
 

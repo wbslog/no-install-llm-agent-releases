@@ -1,32 +1,33 @@
 {
-  "version": "1.7.7",
-  "date": "2026-10-13",
+  "version": "1.7.8",
+  "date": "2026-10-14",
   "notes": [
-    "자체 LLM(vLLM 등) '컨텍스트 한도 초과'(입력 + 답변 예약이 한도를 넘음) 자동 복구 개선: 답변 길이 예약(max_tokens)을 빼고 다시 보내 서버가 남은 공간만큼 답하게 함 — 1토큰 차이로 계속 실패하던 문제",
-    "vLLM 오류의 '최소(at least) N 입력 토큰'을 실제 입력량으로 믿지 않음 (그 값으로 계산한 예약이 계속 넘치던 원인)",
-    "새 자체 LLM 연결의 최대 출력 토큰 기본값 8192 → 0(서버 자동) — 32K 모델에서 컨텍스트의 1/4을 답변용으로 미리 잡지 않음",
-    "컨텍스트 정리 알림이 요약한 메시지 수를 항상 '0개'로 표시하던 문제"
+    "좌측 하단 토큰 사용량 → LLM 서버가 알려 주는 할당량(quota)이 있으면 '토큰 할당량'으로 대체: 남은 토큰, 사용률 게이지(70% 주황·90% 빨강), 이번 달 사용량·요청 수, 누적 사용량·요청 수, 계정 만료일",
+    "할당량은 서버 값을 우선(다른 키·에이전트·웹 채팅 사용량 포함): 작업 시작 전 GET /usage로 확인, 답변마다 응답의 quota로 실시간 갱신, 5분마다·창으로 돌아올 때 다시 확인 (토큰 소모 없음)",
+    "남은 토큰이 0이면 작업을 시작하지 않고 '관리자에게 충전 요청' 안내, 총 할당량의 10% 미만이 되면 한 번 경고, 이번 요청 예상 사용량이 남은 토큰보다 많으면 전송 전에 확인",
+    "서버 오류의 detail 메시지(401·402·403·422)를 그대로 표시, 402(토큰 부족)는 재시도하지 않고 즉시 중단",
+    "할당량을 알려 주지 않는 서버(공식 OpenAI·Gemini·Claude, 일반 vLLM/Ollama)는 기존 토큰 사용량 표시를 그대로 사용"
   ],
   "assets": {
     "darwin-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.7/nila-1.7.7-macos-x64.zip",
-      "sha256": "e070732d3cfd603bc3f08b08fdd66d0da9a52bcbbad5b47b740bc53b140c33e5",
-      "size": 4715276
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.8/nila-1.7.8-macos-x64.zip",
+      "sha256": "1901e2f5a8b43b49a0153d2d49b6c84f640dc589c348e69b50500ab4df9c1e28",
+      "size": 4725798
     },
     "darwin-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.7/nila-1.7.7-macos-arm64.zip",
-      "sha256": "b2caf7c41bc359baa18c6a76f23045d5d27e1d30d3cdbd4af568d665fbe66952",
-      "size": 4387906
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.8/nila-1.7.8-macos-arm64.zip",
+      "sha256": "3f3ac6a03aa77ea04d142058f78e6f147b00ce4c686738e2584e9f17c6bfba0c",
+      "size": 4400613
     },
     "windows-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.7/nila-windows-x64.exe",
-      "sha256": "41791e5e2290ac9fbd9b773596513e624f13a17c159ca205f1e9003156f51c19",
-      "size": 11075072
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.8/nila-windows-x64.exe",
+      "sha256": "1e06f38f20e10387f4af145e759622e8e67d63f2b8f381e46c8a3501da979896",
+      "size": 11101696
     },
     "windows-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.7/nila-windows-arm64.exe",
-      "sha256": "72676d20f28d2964fc0f205059035e058caefd0879e65fa15a61c324e75e3898",
-      "size": 10130944
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.8/nila-windows-arm64.exe",
+      "sha256": "7a0858b0b7f6989eee3e61809fb55bc8c6f0c01ae6e9a850e48cb133aff39a74",
+      "size": 10156544
     }
   }
 }
