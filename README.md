@@ -7,7 +7,7 @@
 **One file. Any LLM. Your whole PC.**
 **파일 하나로, 원하는 LLM으로, 내 PC의 실제 작업까지.**
 
-`v1.7.8` · 2026-10-14 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
+`v1.7.9` · 2026-10-14 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
 
 </div>
 
@@ -17,10 +17,10 @@
 
 | Platform · 플랫폼 | File · 파일 |
 |---|---|
-| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.8/nila-windows-x64.exe) |
-| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.8/nila-windows-arm64.exe) |
-| **macOS Apple Silicon (M1–M4)** | [nila-1.7.8-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.8/nila-1.7.8-macos-arm64.zip) |
-| macOS Intel | [nila-1.7.8-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.8/nila-1.7.8-macos-x64.zip) |
+| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.9/nila-windows-x64.exe) |
+| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.9/nila-windows-arm64.exe) |
+| **macOS Apple Silicon (M1–M4)** | [nila-1.7.9-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.9/nila-1.7.9-macos-arm64.zip) |
+| macOS Intel | [nila-1.7.9-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.9/nila-1.7.9-macos-x64.zip) |
 
 - **Windows** — Save the exe anywhere and double-click. If SmartScreen appears: *More info → Run anyway*.
   받은 exe를 원하는 폴더에 두고 실행하세요. SmartScreen 경고 시 **추가 정보 → 실행**.
@@ -106,6 +106,12 @@ Gemini 계정 로그인은 Node.js가 없으면 휴대용 Node.js를 자동으�
 ---
 
 ## Version history · 버전 기록
+
+### v1.7.9 (2026-10-14)
+
+- 좌측 메뉴와 채팅 영역의 경계선을 마우스로 드래그해 좌측 메뉴 너비 조절 (200~640px, 채팅 영역은 최소 480px 유지) — 경계선에 마우스를 올리면 강조 표시
+- 조절한 너비는 저장되어 다시 실행해도 유지, 경계선 더블클릭 = 기본 너비(280px), 경계선 선택 후 ← → 키로 20px씩 조절
+- 토큰 할당량의 큰 숫자 표시 개선: 10억 이상은 B 단위(예: 1.00B), 칸이 좁으면 줄임표
 
 ### v1.7.8 (2026-10-14)
 

@@ -1,33 +1,31 @@
 {
-  "version": "1.7.8",
+  "version": "1.7.9",
   "date": "2026-10-14",
   "notes": [
-    "좌측 하단 토큰 사용량 → LLM 서버가 알려 주는 할당량(quota)이 있으면 '토큰 할당량'으로 대체: 남은 토큰, 사용률 게이지(70% 주황·90% 빨강), 이번 달 사용량·요청 수, 누적 사용량·요청 수, 계정 만료일",
-    "할당량은 서버 값을 우선(다른 키·에이전트·웹 채팅 사용량 포함): 작업 시작 전 GET /usage로 확인, 답변마다 응답의 quota로 실시간 갱신, 5분마다·창으로 돌아올 때 다시 확인 (토큰 소모 없음)",
-    "남은 토큰이 0이면 작업을 시작하지 않고 '관리자에게 충전 요청' 안내, 총 할당량의 10% 미만이 되면 한 번 경고, 이번 요청 예상 사용량이 남은 토큰보다 많으면 전송 전에 확인",
-    "서버 오류의 detail 메시지(401·402·403·422)를 그대로 표시, 402(토큰 부족)는 재시도하지 않고 즉시 중단",
-    "할당량을 알려 주지 않는 서버(공식 OpenAI·Gemini·Claude, 일반 vLLM/Ollama)는 기존 토큰 사용량 표시를 그대로 사용"
+    "좌측 메뉴와 채팅 영역의 경계선을 마우스로 드래그해 좌측 메뉴 너비 조절 (200~640px, 채팅 영역은 최소 480px 유지) — 경계선에 마우스를 올리면 강조 표시",
+    "조절한 너비는 저장되어 다시 실행해도 유지, 경계선 더블클릭 = 기본 너비(280px), 경계선 선택 후 ← → 키로 20px씩 조절",
+    "토큰 할당량의 큰 숫자 표시 개선: 10억 이상은 B 단위(예: 1.00B), 칸이 좁으면 줄임표"
   ],
   "assets": {
     "darwin-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.8/nila-1.7.8-macos-x64.zip",
-      "sha256": "1901e2f5a8b43b49a0153d2d49b6c84f640dc589c348e69b50500ab4df9c1e28",
-      "size": 4725798
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.9/nila-1.7.9-macos-x64.zip",
+      "sha256": "142f5d7dc5d07f975866497422bb7f0784ac16834aeef64bf160ab94098b8c8f",
+      "size": 4728807
     },
     "darwin-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.8/nila-1.7.8-macos-arm64.zip",
-      "sha256": "3f3ac6a03aa77ea04d142058f78e6f147b00ce4c686738e2584e9f17c6bfba0c",
-      "size": 4400613
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.9/nila-1.7.9-macos-arm64.zip",
+      "sha256": "8d39ed6c0739f797568a4a795d034671bc17d251e143fd31e0e8868e7da29d63",
+      "size": 4400690
     },
     "windows-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.8/nila-windows-x64.exe",
-      "sha256": "1e06f38f20e10387f4af145e759622e8e67d63f2b8f381e46c8a3501da979896",
-      "size": 11101696
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.9/nila-windows-x64.exe",
+      "sha256": "8410a64a072e6d824924bec2e0d429e0733d2e4c7483b49e1f0667ec1bbe9d77",
+      "size": 11107840
     },
     "windows-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.8/nila-windows-arm64.exe",
-      "sha256": "7a0858b0b7f6989eee3e61809fb55bc8c6f0c01ae6e9a850e48cb133aff39a74",
-      "size": 10156544
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.9/nila-windows-arm64.exe",
+      "sha256": "df28d2f23966fab6067ae441e441b52232506726af00189fdb8bfa56dab6411f",
+      "size": 10162688
     }
   }
 }
