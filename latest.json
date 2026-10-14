@@ -1,31 +1,31 @@
 {
-  "version": "1.7.9",
+  "version": "1.7.10",
   "date": "2026-10-14",
   "notes": [
-    "좌측 메뉴와 채팅 영역의 경계선을 마우스로 드래그해 좌측 메뉴 너비 조절 (200~640px, 채팅 영역은 최소 480px 유지) — 경계선에 마우스를 올리면 강조 표시",
-    "조절한 너비는 저장되어 다시 실행해도 유지, 경계선 더블클릭 = 기본 너비(280px), 경계선 선택 후 ← → 키로 20px씩 조절",
-    "토큰 할당량의 큰 숫자 표시 개선: 10억 이상은 B 단위(예: 1.00B), 칸이 좁으면 줄임표"
+    "토큰 할당량 숫자 단위: 1만 미만은 그대로, 9,000K까지는 K, 그 이상은 M (예: 1,561.3K · 994.99M) — 정확한 값은 마우스를 올리면 표시",
+    "답변 생성 중 토큰 할당량이 실시간으로 올라감: 보내는 대화(입력) + 지금까지 생성된 답변을 추정해 남은 토큰·게이지·이번 달·누적에 반영(1초마다, 부드럽게 증가), 응답이 끝나면 서버 값으로 맞춤",
+    "실시간 추정 중에는 게이지에 흐르는 빛 효과와 '사용 중 · 실시간 추정' 표시"
   ],
   "assets": {
     "darwin-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.9/nila-1.7.9-macos-x64.zip",
-      "sha256": "142f5d7dc5d07f975866497422bb7f0784ac16834aeef64bf160ab94098b8c8f",
-      "size": 4728807
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.10/nila-1.7.10-macos-x64.zip",
+      "sha256": "ceffc28c146452708a28486251f7933595c6f5fe779bfc81edfec555e1363162",
+      "size": 4730322
     },
     "darwin-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.9/nila-1.7.9-macos-arm64.zip",
-      "sha256": "8d39ed6c0739f797568a4a795d034671bc17d251e143fd31e0e8868e7da29d63",
-      "size": 4400690
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.10/nila-1.7.10-macos-arm64.zip",
+      "sha256": "15dfcd57287dd669e0d47e8800d24a5590c933d045b7451f36b9746afd556774",
+      "size": 4400587
     },
     "windows-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.9/nila-windows-x64.exe",
-      "sha256": "8410a64a072e6d824924bec2e0d429e0733d2e4c7483b49e1f0667ec1bbe9d77",
-      "size": 11107840
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.10/nila-windows-x64.exe",
+      "sha256": "557e06465d8f9fe975c701be466bc29b07d4c647b54701b8f11fb3ec9a9b5d1c",
+      "size": 11111424
     },
     "windows-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.9/nila-windows-arm64.exe",
-      "sha256": "df28d2f23966fab6067ae441e441b52232506726af00189fdb8bfa56dab6411f",
-      "size": 10162688
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.10/nila-windows-arm64.exe",
+      "sha256": "6f69b1c794c86db6d6e2abf686e8e22c7a48ead118595a0ca740d16d79769d6c",
+      "size": 10166272
     }
   }
 }

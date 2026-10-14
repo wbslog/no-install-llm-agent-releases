@@ -7,7 +7,7 @@
 **One file. Any LLM. Your whole PC.**
 **파일 하나로, 원하는 LLM으로, 내 PC의 실제 작업까지.**
 
-`v1.7.9` · 2026-10-14 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
+`v1.7.10` · 2026-10-14 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
 
 </div>
 
@@ -17,10 +17,10 @@
 
 | Platform · 플랫폼 | File · 파일 |
 |---|---|
-| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.9/nila-windows-x64.exe) |
-| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.9/nila-windows-arm64.exe) |
-| **macOS Apple Silicon (M1–M4)** | [nila-1.7.9-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.9/nila-1.7.9-macos-arm64.zip) |
-| macOS Intel | [nila-1.7.9-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.9/nila-1.7.9-macos-x64.zip) |
+| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.10/nila-windows-x64.exe) |
+| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.10/nila-windows-arm64.exe) |
+| **macOS Apple Silicon (M1–M4)** | [nila-1.7.10-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.10/nila-1.7.10-macos-arm64.zip) |
+| macOS Intel | [nila-1.7.10-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.10/nila-1.7.10-macos-x64.zip) |
 
 - **Windows** — Save the exe anywhere and double-click. If SmartScreen appears: *More info → Run anyway*.
   받은 exe를 원하는 폴더에 두고 실행하세요. SmartScreen 경고 시 **추가 정보 → 실행**.
@@ -106,6 +106,12 @@ Gemini 계정 로그인은 Node.js가 없으면 휴대용 Node.js를 자동으�
 ---
 
 ## Version history · 버전 기록
+
+### v1.7.10 (2026-10-14)
+
+- 토큰 할당량 숫자 단위: 1만 미만은 그대로, 9,000K까지는 K, 그 이상은 M (예: 1,561.3K · 994.99M) — 정확한 값은 마우스를 올리면 표시
+- 답변 생성 중 토큰 할당량이 실시간으로 올라감: 보내는 대화(입력) + 지금까지 생성된 답변을 추정해 남은 토큰·게이지·이번 달·누적에 반영(1초마다, 부드럽게 증가), 응답이 끝나면 서버 값으로 맞춤
+- 실시간 추정 중에는 게이지에 흐르는 빛 효과와 '사용 중 · 실시간 추정' 표시
 
 ### v1.7.9 (2026-10-14)
 
