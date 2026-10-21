@@ -1,33 +1,27 @@
 {
-  "version": "1.7.14",
+  "version": "1.7.15",
   "date": "2026-10-21",
-  "notes": [
-    "명령 실행 결과에서 같은 줄이 반복되면 한 줄 + '(위 줄이 N번 더 반복됨)'으로 줄여 모델에 전달 — 의미 없는 반복 출력이 대화 기억 공간(컨텍스트)을 채우지 않음",
-    "긴 명령 출력은 앞부분만이 아니라 앞부분과 끝부분을 함께 보여 줌 — 끝에 나오는 실제 오류 메시지가 잘리지 않음 (화면 표시도 동일)",
-    "같은 명령이 같은 결과로 3번 반복되면 모델에게 다른 방법을 쓰라고 알리고 화면에 경고, 5번이 되면 작업을 멈추고 안내",
-    "요약(컨텍스트 정리) 직후 다시 한도에 걸리면, 또 요약하기 전에 이미 실행된 단계의 큰 내용(디스크에 저장된 파일 내용, 긴 출력)부터 줄임",
-    "한 작업에서 몇 단계마다 요약이 반복되면(8단계 안에 3번) '컨텍스트가 작업에 비해 작다'는 안내와 함께 작업을 멈춤 — 요약 → 망각 → 같은 시도 반복을 끝없이 돌지 않음"
-  ],
+  "notes": [],
   "assets": {
     "darwin-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.14/nila-1.7.14-macos-x64.zip",
-      "sha256": "ecffc7a69a755b7764a754738d8e411893ce73e0424a2b1b32724ae683248098",
-      "size": 4736985
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.15/nila-1.7.15-macos-x64.zip",
+      "sha256": "fe93eea4037ed7b7894b536166f9da46e10e77a778f6cbfdbe640dceccc9ec69",
+      "size": 4771055
     },
     "darwin-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.14/nila-1.7.14-macos-arm64.zip",
-      "sha256": "f331c81ccfea65c2b14121f0324cdfd88cc413537e4bbc73dad1da621aea1042",
-      "size": 4407967
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.15/nila-1.7.15-macos-arm64.zip",
+      "sha256": "1730928995cafed21b821f2a58ba95911362a81b4714d520dc4324cbc674caf5",
+      "size": 4441666
     },
     "windows-amd64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.14/nila-windows-x64.exe",
-      "sha256": "a578346b6a1fe968d39822d513980ed81e07bae1c458fb161b2d0bef0e0d45f9",
-      "size": 11124736
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.15/nila-windows-x64.exe",
+      "sha256": "181c4e89d6b955b722b0c8d92bd19d94dcddce7a8bf0f54b3220d95b4dbc3b67",
+      "size": 11214848
     },
     "windows-arm64": {
-      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.14/nila-windows-arm64.exe",
-      "sha256": "6bb01493f13ed7f1eefbfa5c98e60aaf94b9d6c06b613040095505a71ac9a897",
-      "size": 10177536
+      "url": "https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.15/nila-windows-arm64.exe",
+      "sha256": "0e7e9b5ee12a747f2394d5c0d3ddd080d19dfed5de8d909a1b040068f86afb54",
+      "size": 10264576
     }
   }
 }
