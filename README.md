@@ -7,7 +7,7 @@
 **One file. Any LLM. Your whole PC.**
 **파일 하나로, 원하는 LLM으로, 내 PC의 실제 작업까지.**
 
-`v1.7.12` · 2026-10-14 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
+`v1.7.13` · 2026-10-21 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
 
 </div>
 
@@ -17,10 +17,10 @@
 
 | Platform · 플랫폼 | File · 파일 |
 |---|---|
-| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.12/nila-windows-x64.exe) |
-| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.12/nila-windows-arm64.exe) |
-| **macOS Apple Silicon (M1–M4)** | [nila-1.7.12-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.12/nila-1.7.12-macos-arm64.zip) |
-| macOS Intel | [nila-1.7.12-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.12/nila-1.7.12-macos-x64.zip) |
+| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.13/nila-windows-x64.exe) |
+| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.13/nila-windows-arm64.exe) |
+| **macOS Apple Silicon (M1–M4)** | [nila-1.7.13-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.13/nila-1.7.13-macos-arm64.zip) |
+| macOS Intel | [nila-1.7.13-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.13/nila-1.7.13-macos-x64.zip) |
 
 - **Windows** — Save the exe anywhere and double-click. If SmartScreen appears: *More info → Run anyway*.
   받은 exe를 원하는 폴더에 두고 실행하세요. SmartScreen 경고 시 **추가 정보 → 실행**.
@@ -106,6 +106,11 @@ Gemini 계정 로그인은 Node.js가 없으면 휴대용 Node.js를 자동으�
 ---
 
 ## Version history · 버전 기록
+
+### v1.7.13 (2026-10-21)
+
+- 채팅창 위의 '이전 대화 N개' 목록을 제거해 대화 영역을 넓힘 (설정 > 에이전트의 '이전 대화 표시 수'도 제거) — 이전 대화는 좌측 목록에서 열고, 작업 폴더를 고르면 최근 대화가 자동으로 열리는 기능과 중단된 작업 [이어서 진행] 안내는 그대로
+- 좌측 채팅 목록에서 작업이 실행 중인 대화(백그라운드 포함) 앞에 글씨를 쓰듯 움직이는 펜 아이콘 표시, 작업이 끝나면 사라짐
 
 ### v1.7.12 (2026-10-14)
 
