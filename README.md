@@ -7,7 +7,7 @@
 **One file. Any LLM. Your whole PC.**
 **파일 하나로, 원하는 LLM으로, 내 PC의 실제 작업까지.**
 
-`v1.7.13` · 2026-10-21 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
+`v1.7.14` · 2026-10-21 · Windows x64 / ARM64 · macOS Apple Silicon / Intel
 
 </div>
 
@@ -17,10 +17,10 @@
 
 | Platform · 플랫폼 | File · 파일 |
 |---|---|
-| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.13/nila-windows-x64.exe) |
-| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.13/nila-windows-arm64.exe) |
-| **macOS Apple Silicon (M1–M4)** | [nila-1.7.13-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.13/nila-1.7.13-macos-arm64.zip) |
-| macOS Intel | [nila-1.7.13-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.13/nila-1.7.13-macos-x64.zip) |
+| **Windows x64** | [nila-windows-x64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.14/nila-windows-x64.exe) |
+| Windows ARM64 | [nila-windows-arm64.exe](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.14/nila-windows-arm64.exe) |
+| **macOS Apple Silicon (M1–M4)** | [nila-1.7.14-macos-arm64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.14/nila-1.7.14-macos-arm64.zip) |
+| macOS Intel | [nila-1.7.14-macos-x64.zip](https://raw.githubusercontent.com/wbslog/no-install-llm-agent-releases/main/releases/v1.7.14/nila-1.7.14-macos-x64.zip) |
 
 - **Windows** — Save the exe anywhere and double-click. If SmartScreen appears: *More info → Run anyway*.
   받은 exe를 원하는 폴더에 두고 실행하세요. SmartScreen 경고 시 **추가 정보 → 실행**.
@@ -106,6 +106,14 @@ Gemini 계정 로그인은 Node.js가 없으면 휴대용 Node.js를 자동으�
 ---
 
 ## Version history · 버전 기록
+
+### v1.7.14 (2026-10-21)
+
+- 명령 실행 결과에서 같은 줄이 반복되면 한 줄 + '(위 줄이 N번 더 반복됨)'으로 줄여 모델에 전달 — 의미 없는 반복 출력이 대화 기억 공간(컨텍스트)을 채우지 않음
+- 긴 명령 출력은 앞부분만이 아니라 앞부분과 끝부분을 함께 보여 줌 — 끝에 나오는 실제 오류 메시지가 잘리지 않음 (화면 표시도 동일)
+- 같은 명령이 같은 결과로 3번 반복되면 모델에게 다른 방법을 쓰라고 알리고 화면에 경고, 5번이 되면 작업을 멈추고 안내
+- 요약(컨텍스트 정리) 직후 다시 한도에 걸리면, 또 요약하기 전에 이미 실행된 단계의 큰 내용(디스크에 저장된 파일 내용, 긴 출력)부터 줄임
+- 한 작업에서 몇 단계마다 요약이 반복되면(8단계 안에 3번) '컨텍스트가 작업에 비해 작다'는 안내와 함께 작업을 멈춤 — 요약 → 망각 → 같은 시도 반복을 끝없이 돌지 않음
 
 ### v1.7.13 (2026-10-21)
 
